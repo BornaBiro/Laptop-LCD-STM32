@@ -1,0 +1,48 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/syn_results/lvdsClk.prj
+#-- Written on Fri Jul 12 22:38:45 2024
+
+
+#device options
+set_option -technology ecp5u
+set_option -part LFE5U-12F
+set_option -speed_grade 6
+
+#use verilog 2001 standard option
+set_option -vlog_std v2001
+
+#map options
+set_option -frequency 100
+set_option -fanout_limit 50
+set_option -disable_io_insertion true
+set_option -retiming false
+set_option -pipe false
+set_option -pipe false
+set_option -force_gsr false
+
+#simulation options
+set_option -write_verilog true
+set_option -write_vhdl true
+
+#timing analysis options
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#-- add_file options
+add_file -verilog -lib work "C:/lscc/diamond/3.13/cae_library/synthesis/verilog/ecp5u.v"
+add_file -verilog -lib work "C:/lscc/diamond/3.13/cae_library/synthesis/verilog/pmi_def.v"
+add_file -verilog -lib work "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/lvdsClk.v"
+add_file -constraint {"C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/lvdsClk.fdc"}
+
+#-- top module name
+set_option -top_module lvdsClk
+
+#-- set result format/file last
+project -result_file "lvdsClk.edn"
+
+#-- error message log file
+project -log_file lvdsClk.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

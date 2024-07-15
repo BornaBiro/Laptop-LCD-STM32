@@ -1,0 +1,6 @@
+#Start recording tcl command: 7/8/2024 20:39:32
+#Project Location: C:/Users/Borna/Documents/Projects/FPGA/Blink; Project name: Blink
+prj_project open "C:/Users/Borna/Documents/Projects/FPGA/Blink/Blink.ldf"
+sbp_design open -dsgn "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/pll.sbx"
+prj_run Export -impl impl1 -task Bitgen
+#Stop recording: 7/8/2024 21:06:21

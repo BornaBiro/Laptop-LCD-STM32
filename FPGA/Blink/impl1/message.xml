@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by sa5p00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(7): Semantic error in &quot;FREQUENCY PORT &quot;clk_25mhz&quot; 25.000000 MHz ;&quot;: </Dynamic>
+            <Dynamic>&quot;clk_25mhz&quot; matches no ports in the design. </Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(5): Semantic error in &quot;LOCATE COMP &quot;clk_25mhz&quot; SITE &quot;G2&quot; ;&quot;: </Dynamic>
+            <Dynamic>clk_25mhz</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(6): Semantic error in &quot;IOBUF PORT &quot;clk_25mhz&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>clk_25mhz</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(14): Semantic error in &quot;LOCATE COMP &quot;ftdi_rxd&quot; SITE &quot;L4&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_rxd</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(15): Semantic error in &quot;LOCATE COMP &quot;ftdi_txd&quot; SITE &quot;M1&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txd</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(16): Semantic error in &quot;LOCATE COMP &quot;ftdi_nrts&quot; SITE &quot;M3&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_nrts</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(17): Semantic error in &quot;LOCATE COMP &quot;ftdi_ndtr&quot; SITE &quot;N1&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_ndtr</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(18): Semantic error in &quot;LOCATE COMP &quot;ftdi_txden&quot; SITE &quot;L3&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txden</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(19): Semantic error in &quot;IOBUF PORT &quot;ftdi_rxd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_rxd</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(20): Semantic error in &quot;IOBUF PORT &quot;ftdi_txd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txd</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(21): Semantic error in &quot;IOBUF PORT &quot;ftdi_nrts&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_nrts</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(22): Semantic error in &quot;IOBUF PORT &quot;ftdi_ndtr&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_ndtr</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(23): Semantic error in &quot;IOBUF PORT &quot;ftdi_txden&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txden</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(41): Semantic error in &quot;IOBUF PORT &quot;pixelClock&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>pixelClock</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>pixelClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pixelClock</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(12): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/pll/lvdsclk/lvdsclk.v(8): </Dynamic>
+            <Dynamic>lvdsClk</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/pll/lvdsclk/lvdsclk.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(278): </Dynamic>
+            <Dynamic>IB</Dynamic>
+            <Navigation>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>278</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>757</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>761</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1696): </Dynamic>
+            <Dynamic>EHXPLLL(CLKFB_DIV=7,CLKOP_DIV=2,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOP_CPHASE=1,FEEDBK_PATH=&quot;USERCLOCK&quot;,CLKOP_TRIM_POL=&quot;FALLING&quot;,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>1696</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(35): </Dynamic>
+            <Dynamic>parallelToLvds</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901220</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(48): </Dynamic>
+            <Dynamic>lvdsTest1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901220</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(49): </Dynamic>
+            <Dynamic>lvdsTest2</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(62): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>62</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(63): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>63</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(64): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(75): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gnd</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pixelClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pixelClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pllInClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>pixelClock</Dynamic>
+            <Navigation>pixelClock</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>pixelClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG274 :&quot;C:\Users\Borna\Documents\Projects\FPGA\Blink\pll\pll.v&quot;:5:0:5:21|Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used</Dynamic>
+            <Navigation>CG274</Navigation>
+            <Navigation>C:\Users\Borna\Documents\Projects\FPGA\Blink\pll\pll.v</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;C:\Users\Borna\Documents\Projects\FPGA\Blink\pll\lvdsClk\lvdsClk.v&quot;:23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>C:\Users\Borna\Documents\Projects\FPGA\Blink\pll\lvdsClk\lvdsClk.v</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\borna\documents\projects\fpga\blink\pll\lvdsclk\lvdsclk.v&quot;:59:12:59:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\borna\documents\projects\fpga\blink\pll\lvdsclk\lvdsclk.v</Navigation>
+            <Navigation>59</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>59</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

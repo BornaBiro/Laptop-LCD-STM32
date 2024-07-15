@@ -1,0 +1,3 @@
+@W: CG274 :"C:\Users\Borna\Documents\Projects\FPGA\Blink\pll\pll.v":5:0:5:21|Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used
+@W: CL168 :"C:\Users\Borna\Documents\Projects\FPGA\Blink\pll\lvdsClk\lvdsClk.v":23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+

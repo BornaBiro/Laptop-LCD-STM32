@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe  -link  -top  pll  -multisrs  C:\Users\Borna\Documents\Projects\FPGA\Blink\impl1\synwork\Blink_impl1_comp.srs  -osyn  C:\Users\Borna\Documents\Projects\FPGA\Blink\impl1\synwork\Blink_impl1_mult.srs  -log  C:\Users\Borna\Documents\Projects\FPGA\Blink\impl1\synlog\Blink_impl1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe -link -top pll -multisrs ..\synwork\Blink_impl1_comp.srs -osyn ..\synwork\Blink_impl1_mult.srs -log ..\synlog\Blink_impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\blink_impl1_comp.srs|io:i|time:1720816928|size:5838|exec:0|csum:605361FC13041520E461791F57959C5B
+file:..\synwork\blink_impl1_mult.srs|io:o|time:1720816929|size:1580|exec:0|csum:
+file:..\synlog\blink_impl1_multi_srs_gen.srr|io:o|time:1720816929|size:1078|exec:0|csum:
+file:..\..\..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe|io:i|time:1691654056|size:10600960|exec:1|csum:6BAEBE966B12EE4A1CCC452B6603E0B1

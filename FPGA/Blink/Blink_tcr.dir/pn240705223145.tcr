@@ -1,0 +1,18 @@
+#Start recording tcl command: 7/5/2024 19:38:59
+#Project Location: C:/Users/Borna/Documents/Projects/FPGA/Blink; Project name: Blink
+prj_project open "C:/Users/Borna/Documents/Projects/FPGA/Blink/Blink.ldf"
+sbp_design new -dsgn "pll" -path "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll" -device "LFE5U-12F-6BG381I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk"
+source "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk"
+source "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {pll/lvdsClk}
+sbp_design save
+prj_src add "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/pll.sbx"
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+#Stop recording: 7/5/2024 22:31:45

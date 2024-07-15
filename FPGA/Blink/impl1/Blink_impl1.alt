@@ -1,0 +1,19 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jul 16 00:38:39 2024 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LFE5U-12F-6CABGA381 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS pllInClock : B11 : in *
+NOTE PINS lvdsLine2 : F17 : out *
+NOTE PINS lcdDe : B9 : in *
+NOTE PINS lcdHsync : B10 : in *
+NOTE PINS lvdsLine1 : A2 : out *
+NOTE PINS lcdVsync : A9 : in *
+NOTE PINS lvdsLine0 : D18 : out *
+NOTE PINS lvdsOutClk : A4 : out *
+NOTE PINS SYSCONFIG_PIN_D1 : V2 : inout *
+NOTE PINS SYSCONFIG_PIN_D0 : W2 : inout *
+NOTE PINS SYSCONFIG_PIN_HOLDN : R2 : inout *
+NOTE CONFIGURATION MODE: JTAG *
+NOTE COMPRESSION: on *

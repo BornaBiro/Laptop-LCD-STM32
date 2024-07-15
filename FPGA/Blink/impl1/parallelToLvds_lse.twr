@@ -1,0 +1,131 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Jul 12 21:56:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     parallelToLvds
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets pllClock_c]
+            12 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.964ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             bitCounter__i1  (from pllClock_c +)
+   Destination:    FD1S3IX    CD             bitCounter__i0  (to pllClock_c +)
+
+   Delay:                   3.211ns  (16.5% logic, 83.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.211ns data_path bitCounter__i1 to bitCounter__i0 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.964ns
+
+ Path Details: bitCounter__i1 to bitCounter__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              bitCounter__i1 (from pllClock_c)
+Route         5   e 1.441                                  bitCounter[1]
+LUT4        ---     0.166              A to Z              i1_2_lut
+Route         3   e 1.239                                  n39
+                  --------
+                    3.211  (16.5% logic, 83.5% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 1.964ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             bitCounter__i1  (from pllClock_c +)
+   Destination:    FD1S3IX    CD             bitCounter__i1  (to pllClock_c +)
+
+   Delay:                   3.211ns  (16.5% logic, 83.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.211ns data_path bitCounter__i1 to bitCounter__i1 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.964ns
+
+ Path Details: bitCounter__i1 to bitCounter__i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              bitCounter__i1 (from pllClock_c)
+Route         5   e 1.441                                  bitCounter[1]
+LUT4        ---     0.166              A to Z              i1_2_lut
+Route         3   e 1.239                                  n39
+                  --------
+                    3.211  (16.5% logic, 83.5% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 1.964ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             bitCounter__i1  (from pllClock_c +)
+   Destination:    FD1S3IX    CD             bitCounter__i2  (to pllClock_c +)
+
+   Delay:                   3.211ns  (16.5% logic, 83.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.211ns data_path bitCounter__i1 to bitCounter__i2 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.964ns
+
+ Path Details: bitCounter__i1 to bitCounter__i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              bitCounter__i1 (from pllClock_c)
+Route         5   e 1.441                                  bitCounter[1]
+LUT4        ---     0.166              A to Z              i1_2_lut
+Route         3   e 1.239                                  n39
+                  --------
+                    3.211  (16.5% logic, 83.5% route), 2 logic levels.
+
+Report: 3.036 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets pllClock_c]              |     5.000 ns|     3.036 ns|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  12 paths, 8 nets, and 17 connections (65.4% coverage)
+
+
+Peak memory: 74956800 bytes, TRCE: 61440 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

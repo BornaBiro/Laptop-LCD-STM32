@@ -1,0 +1,336 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-12F -t CABGA381 -s 6 -oc Industrial
+     Blink_impl1.ngd -o Blink_impl1_map.ncd -pr Blink_impl1.prf -mp
+     Blink_impl1.mrp -lpf
+     C:/Users/Borna/Documents/Projects/FPGA/Blink/impl1/Blink_impl1.lpf -lpf
+     C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf -gui -msgset
+     C:/Users/Borna/Documents/Projects/FPGA/Blink/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-12FCABGA381
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  07/16/24  00:38:30
+
+Design Summary
+--------------
+
+   Number of registers:      8 out of 12687 (0%)
+      PFU registers:            8 out of 12096 (0%)
+      PIO registers:            0 out of   591 (0%)
+   Number of SLICEs:         7 out of  6048 (0%)
+      SLICEs as Logic/ROM:      7 out of  6048 (0%)
+      SLICEs as RAM:            0 out of  4536 (0%)
+      SLICEs as Carry:          0 out of  6048 (0%)
+   Number of LUT4s:          9 out of 12096 (0%)
+      Number used as logic LUTs:          9
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 out of 197 (6%)
+      Number of PIO sites used for single ended IOs: 4
+      Number of PIO sites used for differential IOs: 8 (represented by 4 PIO
+     comps in NCD)
+   Number of block RAMs:  0 out of 32 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  07/16/24  00:38:30
+
+Design Summary (cont)
+---------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  2
+     Net pllOutClock: 6 loads, 6 rising, 0 falling (Driver: myLvdsPll/PLLInst_0
+     )
+     Net buf_CLKI: 1 loads, 1 rising, 0 falling (Driver: PIO pllInClock )
+   Number of Clock Enables:  0
+   Number of LSRs:  1
+     Net myParallelToLvds/bitCounter_3__N_12: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net myParallelToLvds/bitCounter_0: 8 loads
+     Net myParallelToLvds/bitCounter_1: 6 loads
+     Net myParallelToLvds/bitCounter_2: 6 loads
+     Net myParallelToLvds/bitCounter_3: 3 loads
+     Net myParallelToLvds/bitCounter_3__N_12: 2 loads
+     Net lcdDe_c: 1 loads
+     Net lvdsLine2_c: 1 loads
+     Net myParallelToLvds/lvdsClock_N_14: 1 loads
+     Net myParallelToLvds/lvdsTest3_0: 1 loads
+     Net myParallelToLvds/n22: 1 loads
+
+
+
+
+   Number of warnings:  16
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(7):
+     Semantic error in "FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;": "clk_25mhz"
+     matches no ports in the design.  This preference has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(5):
+     Semantic error in "LOCATE COMP "clk_25mhz" SITE "G2" ;": COMP "clk_25mhz"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(6):
+     Semantic error in "IOBUF PORT "clk_25mhz" PULLMODE=NONE IO_TYPE=LVCMOS33
+     ;": Port "clk_25mhz" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(14):
+     Semantic error in "LOCATE COMP "ftdi_rxd" SITE "L4" ;": COMP "ftdi_rxd"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(15):
+     Semantic error in "LOCATE COMP "ftdi_txd" SITE "M1" ;": COMP "ftdi_txd"
+     cannot be found in design. This preference has been disabled.
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  07/16/24  00:38:30
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(16):
+     Semantic error in "LOCATE COMP "ftdi_nrts" SITE "M3" ;": COMP "ftdi_nrts"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(17):
+     Semantic error in "LOCATE COMP "ftdi_ndtr" SITE "N1" ;": COMP "ftdi_ndtr"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(18):
+     Semantic error in "LOCATE COMP "ftdi_txden" SITE "L3" ;": COMP "ftdi_txden"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(19):
+     Semantic error in "IOBUF PORT "ftdi_rxd" PULLMODE=UP IO_TYPE=LVCMOS33
+     DRIVE=4 ;": Port "ftdi_rxd" does not exist in the design. This preference
+     has been disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(20):
+     Semantic error in "IOBUF PORT "ftdi_txd" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
+     Port "ftdi_txd" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(21):
+     Semantic error in "IOBUF PORT "ftdi_nrts" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
+     Port "ftdi_nrts" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(22):
+     Semantic error in "IOBUF PORT "ftdi_ndtr" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
+     Port "ftdi_ndtr" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(23):
+     Semantic error in "IOBUF PORT "ftdi_txden" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
+     Port "ftdi_txden" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(41):
+     Semantic error in "IOBUF PORT "pixelClock" IO_TYPE=LVCMOS33 ;": Port
+     "pixelClock" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: input pad net 'pixelClock' has no legal load.
+WARNING - map: IO buffer missing for top level port pixelClock...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| pllInClock          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lvdsLine2           | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| lcdDe               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lcdHsync            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lvdsLine1           | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| lcdVsync            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  07/16/24  00:38:30
+
+IO (PIO) Attributes (cont)
+--------------------------
+| lvdsLine0           | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| lvdsOutClk          | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i5 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                myLvdsPll/PLLInst_0
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             PIN      buf_CLKI
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         NODE     pllOutClock
+  Feedback Signal:                         NODE     pllOutClock
+  Reset Signal:                                     NONE
+  Standby Signal:                          NODE     GND_net
+  Input Clock Frequency (MHz):                      48.0000
+  Output Clock(P) Frequency (MHz):                  336.0000
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          USERCLOCK
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    7
+  CLKOP Divider:                                    2
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Trim Option Rising/Falling:                NONE
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  07/16/24  00:38:30
+
+PLL/DLL Summary (cont)
+----------------------
+  CLKOS3 Trim Option Delay:                         NONE
+
+ASIC Components
+---------------
+
+Instance Name: myLvdsPll/PLLInst_0
+         Type: EHXPLLL
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 108 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 5
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.

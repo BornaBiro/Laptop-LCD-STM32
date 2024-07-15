@@ -1,0 +1,80 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "22:38:56    12-Jul-2024",
+	"Working Directory" : "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/syn_results",
+	"Install" : "C:/lscc/diamond/3.13/synpbase"
+},
+"syn_results" :{
+   "Start Time" : "22:38:45",
+   "Runtime" : "11s",
+   "Executable Run Time" : "10s",
+   "synthesis" : {
+      "Start Time" : "22:38:45",
+      "Runtime" : "11s",
+      "Executable Run Time" : "10s",
+      "compile" : {
+         "Start Time" : "22:38:45",
+         "Runtime" : "06s",
+         "Executable Run Time" : "05s",
+         "compile_flow" : {
+            "Start Time" : "22:38:45",
+            "Runtime" : "04s",
+            "Executable Run Time" : "03s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/syn_results",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "22:38:45",
+               "Run Time" : "04s",
+               "Exe Run Time" : "03s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/syn_results",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "22:38:49",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/syn_results",
+            "Run State" : "Complete",
+            "Return Code" : "0",
+            "Has Errors" : "no",
+            "Run Start Time" : "22:38:49",
+            "Run Time" : "02s",
+            "Exe Run Time" : "02s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "22:38:51",
+         "Runtime" : "05s",
+         "Executable Run Time" : "05s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/Borna/Documents/Projects/FPGA/Blink/pll/lvdsClk/syn_results",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "22:38:51",
+            "Run Time" : "05s",
+            "Exe Run Time" : "05s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}
