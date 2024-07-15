@@ -5,41 +5,41 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1721083119"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1721084381"/>
             <Task name="Promgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1721083111">
-            <Task name="Map" build_result="2" update_result="0" update_time="1721083111"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1721083112"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1721083111"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1721083111"/>
+        <Milestone name="Map" build_result="2" build_time="1721084372">
+            <Task name="Map" build_result="2" update_result="0" update_time="1721084372"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1721084373"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1721084372"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1721084372"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1721083116">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1721083116"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1721083117"/>
+        <Milestone name="PAR" build_result="2" build_time="1721084378">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1721084378"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1721084378"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1721083110">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1721083110"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1721083119"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1721084371">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1721084371"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1721084381"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1721083107"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1721083107"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1721084367"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1721084367"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/Blink_impl1_map.vdb" last_build_time="1721083111" last_build_size="39058"/>
-        <Report name="Blink_impl1.bgn" last_build_time="1721083119" last_build_size="4588"/>
-        <Report name="Blink_impl1.bit" last_build_time="1721083119" last_build_size="99405"/>
+        <Report name=".vdbs/Blink_impl1_map.vdb" last_build_time="1721084372" last_build_size="40957"/>
+        <Report name="Blink_impl1.bgn" last_build_time="1721084381" last_build_size="4588"/>
+        <Report name="Blink_impl1.bit" last_build_time="1721084381" last_build_size="99577"/>
         <Report name="Blink_impl1.edi" last_build_time="1720816935" last_build_size="10905"/>
-        <Report name="Blink_impl1.lsedata" last_build_time="1721083109" last_build_size="32165"/>
-        <Report name="Blink_impl1.ncd" last_build_time="1721083116" last_build_size="20923"/>
-        <Report name="Blink_impl1.ngd" last_build_time="1721083110" last_build_size="18056"/>
-        <Report name="Blink_impl1.tw1" last_build_time="1721083112" last_build_size="9641"/>
-        <Report name="Blink_impl1.twr" last_build_time="1721083117" last_build_size="47613"/>
-        <Report name="Blink_impl1_map.ncd" last_build_time="1721083110" last_build_size="15167"/>
+        <Report name="Blink_impl1.lsedata" last_build_time="1721084371" last_build_size="52196"/>
+        <Report name="Blink_impl1.ncd" last_build_time="1721084378" last_build_size="29945"/>
+        <Report name="Blink_impl1.ngd" last_build_time="1721084371" last_build_size="25004"/>
+        <Report name="Blink_impl1.tw1" last_build_time="1721084373" last_build_size="9641"/>
+        <Report name="Blink_impl1.twr" last_build_time="1721084378" last_build_size="47602"/>
+        <Report name="Blink_impl1_map.ncd" last_build_time="1721084372" last_build_size="21993"/>
     </Strategy>
 </BuildStatus>
-                             
+           

@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Tue Jul 16 00:38:30 2024
+Tue Jul 16 00:59:31 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -23,84 +23,84 @@ Constraint: create_clock -period 5.000000 -name clk0 [get_nets pllOutClock]
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 1.812ns
+Passed:  The following path meets requirements by 1.748ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \myParallelToLvds/bitCounter_11__i0  (from pllOutClock +)
-   Destination:    FD1S3IX    CD             \myParallelToLvds/bitCounter_11__i0  (to pllOutClock +)
+   Source:         FD1S3IX    CK             \myParallelToLvds/bitCounter_14__i0  (from pllOutClock +)
+   Destination:    FD1S3IX    CD             \myParallelToLvds/bitCounter_14__i0  (to pllOutClock +)
 
-   Delay:                   3.363ns  (15.8% logic, 84.2% route), 2 logic levels.
+   Delay:                   3.427ns  (15.5% logic, 84.5% route), 2 logic levels.
 
  Constraint Details:
 
-      3.363ns data_path \myParallelToLvds/bitCounter_11__i0 to \myParallelToLvds/bitCounter_11__i0 meets
+      3.427ns data_path \myParallelToLvds/bitCounter_14__i0 to \myParallelToLvds/bitCounter_14__i0 meets
       5.000ns delay constraint less
-     -0.175ns L_S requirement (totaling 5.175ns) by 1.812ns
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.748ns
 
- Path Details: \myParallelToLvds/bitCounter_11__i0 to \myParallelToLvds/bitCounter_11__i0
+ Path Details: \myParallelToLvds/bitCounter_14__i0 to \myParallelToLvds/bitCounter_14__i0
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.365             CK to Q              \myParallelToLvds/bitCounter_11__i0 (from pllOutClock)
-Route         8   e 1.535                                  \myParallelToLvds/bitCounter[0]
-LUT4        ---     0.166              A to Z              \myParallelToLvds/i25_4_lut
-Route         4   e 1.297                                  \myParallelToLvds/bitCounter_3__N_12
+L_CO        ---     0.365             CK to Q              \myParallelToLvds/bitCounter_14__i0 (from pllOutClock)
+Route        11   e 1.599                                  \myParallelToLvds/bitCounter[0]
+LUT4        ---     0.166              A to Z              \myParallelToLvds/i28_4_lut
+Route         4   e 1.297                                  \myParallelToLvds/bitCounter_3__N_15
                   --------
-                    3.363  (15.8% logic, 84.2% route), 2 logic levels.
+                    3.427  (15.5% logic, 84.5% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 1.812ns
+Passed:  The following path meets requirements by 1.748ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \myParallelToLvds/bitCounter_11__i0  (from pllOutClock +)
-   Destination:    FD1S3IX    CD             \myParallelToLvds/bitCounter_11__i3  (to pllOutClock +)
+   Source:         FD1S3IX    CK             \myParallelToLvds/bitCounter_14__i0  (from pllOutClock +)
+   Destination:    FD1S3IX    CD             \myParallelToLvds/bitCounter_14__i1  (to pllOutClock +)
 
-   Delay:                   3.363ns  (15.8% logic, 84.2% route), 2 logic levels.
+   Delay:                   3.427ns  (15.5% logic, 84.5% route), 2 logic levels.
 
  Constraint Details:
 
-      3.363ns data_path \myParallelToLvds/bitCounter_11__i0 to \myParallelToLvds/bitCounter_11__i3 meets
+      3.427ns data_path \myParallelToLvds/bitCounter_14__i0 to \myParallelToLvds/bitCounter_14__i1 meets
       5.000ns delay constraint less
-     -0.175ns L_S requirement (totaling 5.175ns) by 1.812ns
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.748ns
 
- Path Details: \myParallelToLvds/bitCounter_11__i0 to \myParallelToLvds/bitCounter_11__i3
+ Path Details: \myParallelToLvds/bitCounter_14__i0 to \myParallelToLvds/bitCounter_14__i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.365             CK to Q              \myParallelToLvds/bitCounter_11__i0 (from pllOutClock)
-Route         8   e 1.535                                  \myParallelToLvds/bitCounter[0]
-LUT4        ---     0.166              A to Z              \myParallelToLvds/i25_4_lut
-Route         4   e 1.297                                  \myParallelToLvds/bitCounter_3__N_12
+L_CO        ---     0.365             CK to Q              \myParallelToLvds/bitCounter_14__i0 (from pllOutClock)
+Route        11   e 1.599                                  \myParallelToLvds/bitCounter[0]
+LUT4        ---     0.166              A to Z              \myParallelToLvds/i28_4_lut
+Route         4   e 1.297                                  \myParallelToLvds/bitCounter_3__N_15
                   --------
-                    3.363  (15.8% logic, 84.2% route), 2 logic levels.
+                    3.427  (15.5% logic, 84.5% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 1.812ns
+Passed:  The following path meets requirements by 1.748ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \myParallelToLvds/bitCounter_11__i0  (from pllOutClock +)
-   Destination:    FD1S3IX    CD             \myParallelToLvds/bitCounter_11__i2  (to pllOutClock +)
+   Source:         FD1S3IX    CK             \myParallelToLvds/bitCounter_14__i0  (from pllOutClock +)
+   Destination:    FD1S3IX    CD             \myParallelToLvds/bitCounter_14__i3  (to pllOutClock +)
 
-   Delay:                   3.363ns  (15.8% logic, 84.2% route), 2 logic levels.
+   Delay:                   3.427ns  (15.5% logic, 84.5% route), 2 logic levels.
 
  Constraint Details:
 
-      3.363ns data_path \myParallelToLvds/bitCounter_11__i0 to \myParallelToLvds/bitCounter_11__i2 meets
+      3.427ns data_path \myParallelToLvds/bitCounter_14__i0 to \myParallelToLvds/bitCounter_14__i3 meets
       5.000ns delay constraint less
-     -0.175ns L_S requirement (totaling 5.175ns) by 1.812ns
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.748ns
 
- Path Details: \myParallelToLvds/bitCounter_11__i0 to \myParallelToLvds/bitCounter_11__i2
+ Path Details: \myParallelToLvds/bitCounter_14__i0 to \myParallelToLvds/bitCounter_14__i3
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.365             CK to Q              \myParallelToLvds/bitCounter_11__i0 (from pllOutClock)
-Route         8   e 1.535                                  \myParallelToLvds/bitCounter[0]
-LUT4        ---     0.166              A to Z              \myParallelToLvds/i25_4_lut
-Route         4   e 1.297                                  \myParallelToLvds/bitCounter_3__N_12
+L_CO        ---     0.365             CK to Q              \myParallelToLvds/bitCounter_14__i0 (from pllOutClock)
+Route        11   e 1.599                                  \myParallelToLvds/bitCounter[0]
+LUT4        ---     0.166              A to Z              \myParallelToLvds/i28_4_lut
+Route         4   e 1.297                                  \myParallelToLvds/bitCounter_3__N_15
                   --------
-                    3.363  (15.8% logic, 84.2% route), 2 logic levels.
+                    3.427  (15.5% logic, 84.5% route), 2 logic levels.
 
-Report: 3.188 ns is the maximum delay for this constraint.
+Report: 3.252 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -110,7 +110,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets pllOutClock]             |     5.000 ns|     3.188 ns|     2  
+clk0 [get_nets pllOutClock]             |     5.000 ns|     3.252 ns|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -124,8 +124,8 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover  30 paths, 11 nets, and 27 connections (51.9% coverage)
+Constraints cover  30 paths, 11 nets, and 27 connections (32.9% coverage)
 
 
-Peak memory: 75792384 bytes, TRCE: 290816 bytes, DLYMAN: 0 bytes
+Peak memory: 75837440 bytes, TRCE: 65536 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

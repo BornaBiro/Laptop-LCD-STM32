@@ -14,7 +14,7 @@ Performance Grade:      6
 PACKAGE:          CABGA381
 Package Status:                     Final          Version 1.44
 
-Tue Jul 16 00:38:34 2024
+Tue Jul 16 00:59:35 2024
 
 Pinout by Port Name:
 +------------+----------+-------------+-------+-----------+-----------------------------------+
@@ -28,6 +28,9 @@ Pinout by Port Name:
 | lvdsLine2  | F17/2    | LVDS_OUT    | PR8A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
 | lvdsOutClk | A4/7     | LVDS_OUT    | PL2A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
 | pllInClock | B11/0    | LVCMOS33_IN | PT29A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
+| sw[0]      | E8/0     | LVCMOS33_IN | PT13A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
+| sw[1]      | D8/0     | LVCMOS33_IN | PT13B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
+| sw[2]      | D7/0     | LVCMOS33_IN | PT9B  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
 +------------+----------+-------------+-------+-----------+-----------------------------------+
 
 Vccio by Bank:
@@ -110,8 +113,8 @@ Vccio by Bank:
 | D3/7     |     unused, PULL:DOWN |            |               | PL8D  | LDQ8                     |           |
 | D5/7     |     unused, PULL:DOWN |            |               | PL8B  | LDQSN8                   |           |
 | D6/0     |     unused, PULL:DOWN |            |               | PT6B  |                          |           |
-| D7/0     |     unused, PULL:DOWN |            |               | PT9B  |                          |           |
-| D8/0     |     unused, PULL:DOWN |            |               | PT13B |                          |           |
+| D7/0     | sw[2]                 | LOCATED    | LVCMOS33_IN   | PT9B  |                          |           |
+| D8/0     | sw[1]                 | LOCATED    | LVCMOS33_IN   | PT13B |                          |           |
 | D9/0     |     unused, PULL:DOWN |            |               | PT20A |                          |           |
 | D11/1    |     unused, PULL:DOWN |            |               | PT33A | PCLKT1_1                 |           |
 | D12/1    |     unused, PULL:DOWN |            |               | PT38A | GR_PCLK1_0               |           |
@@ -130,7 +133,7 @@ Vccio by Bank:
 | E5/7     |     unused, PULL:DOWN |            |               | PL11C | LDQ8                     |           |
 | E6/0     |     unused, PULL:DOWN |            |               | PT6A  |                          |           |
 | E7/0     |     unused, PULL:DOWN |            |               | PT9A  |                          |           |
-| E8/0     |     unused, PULL:DOWN |            |               | PT13A |                          |           |
+| E8/0     | sw[0]                 | LOCATED    | LVCMOS33_IN   | PT13A |                          |           |
 | E9/0     |     unused, PULL:DOWN |            |               | PT20B |                          |           |
 | E11/1    |     unused, PULL:DOWN |            |               | PT33B |                          |           |
 | E12/1    |     unused, PULL:DOWN |            |               | PT38B | GR_PCLK1_1               |           |
@@ -291,6 +294,9 @@ LOCATE  COMP  "lvdsLine1"  SITE  "A2";
 LOCATE  COMP  "lvdsLine2"  SITE  "F17";
 LOCATE  COMP  "lvdsOutClk"  SITE  "A4";
 LOCATE  COMP  "pllInClock"  SITE  "B11";
+LOCATE  COMP  "sw[0]"  SITE  "E8";
+LOCATE  COMP  "sw[1]"  SITE  "D8";
+LOCATE  COMP  "sw[2]"  SITE  "D7";
 
 #PLL
 LOCATE  COMP  "myLvdsPll/PLLInst_0"  SITE  "PLL_BL0" ;
@@ -304,7 +310,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jul 16 00:38:34 2024
+Tue Jul 16 00:59:35 2024
 
 
 

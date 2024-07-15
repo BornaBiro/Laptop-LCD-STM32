@@ -120,16 +120,56 @@
         <Message>
             <ID>1100644</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(41): Semantic error in &quot;IOBUF PORT &quot;pixelClock&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(32): Semantic error in &quot;IOBUF PORT &quot;sw[3]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sw[3]</Dynamic>
+            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(51): Semantic error in &quot;IOBUF PORT &quot;pixelClock&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
             <Dynamic>pixelClock</Dynamic>
             <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
-            <Navigation>41</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DRIVE</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>sw_pad_2/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DRIVE</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>sw_pad_0/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DRIVE</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>sw_pad_1/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>sw[3]</Dynamic>
         </Message>
         <Message>
             <ID>1166064</ID>
             <Severity>Warning</Severity>
             <Dynamic>input</Dynamic>
             <Dynamic>pixelClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sw[3:0](3)</Dynamic>
         </Message>
         <Message>
             <ID>51001046</ID>
@@ -197,44 +237,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(35): </Dynamic>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(36): </Dynamic>
             <Dynamic>parallelToLvds</Dynamic>
             <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>35</Navigation>
-        </Message>
-        <Message>
-            <ID>35901220</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(48): </Dynamic>
-            <Dynamic>lvdsTest1</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>48</Navigation>
-        </Message>
-        <Message>
-            <ID>35901220</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(49): </Dynamic>
-            <Dynamic>lvdsTest2</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>49</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(62): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>62</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(63): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>63</Navigation>
+            <Navigation>36</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
@@ -248,16 +254,34 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(75): </Dynamic>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(65): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(66): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(99): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>4</Dynamic>
             <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>75</Navigation>
+            <Navigation>99</Navigation>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35002005</ID>
             <Severity>Warning</Severity>
-            <Dynamic>gnd</Dynamic>
+            <Dynamic>sw[3]</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -265,28 +289,9 @@
             <Dynamic>pixelClock</Dynamic>
         </Message>
         <Message>
-            <ID>35001748</ID>
+            <ID>35002005</ID>
             <Severity>Warning</Severity>
-            <Dynamic>6</Dynamic>
-            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001748</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>5</Dynamic>
-            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001748</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>4</Dynamic>
-            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001748</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>3</Dynamic>
-            <Dynamic>\myParallelToLvds/lvdsTest3</Dynamic>
+            <Dynamic>sw[3]</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -306,6 +311,19 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
+            <Dynamic>sw[3]</Dynamic>
+            <Navigation>sw[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>sw[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
             <Dynamic>pixelClock</Dynamic>
             <Navigation>pixelClock</Navigation>
         </Message>
@@ -318,7 +336,7 @@
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
+            <Dynamic>4</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">

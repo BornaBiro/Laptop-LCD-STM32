@@ -9,7 +9,7 @@
 //		
 //endmodule
 
-module top(input pllInClock, input pixelClock, input lcdVsync, input lcdHsync, input lcdDe, output lvdsOutClk, output lvdsLine0, output lvdsLine1, output lvdsLine2);
+module top(input [3:0] sw, input pllInClock, input pixelClock, input lcdVsync, input lcdHsync, input lcdDe, output lvdsOutClk, output lvdsLine0, output lvdsLine1, output lvdsLine2);
   // Instantiate lvdsClk (assuming it's a PLL)
   lvdsClk myLvdsPll (
     .CLKI(pllInClock),
@@ -19,6 +19,7 @@ module top(input pllInClock, input pixelClock, input lcdVsync, input lcdHsync, i
 
   // Instantiate parallelToLvds
   parallelToLvds myParallelToLvds (
+	.rgbTest(sw),
     .lvdsInputClock(pllOutClock),
     .pixelClock(pixelClock),
     .vsync(lcdVsync),
@@ -33,6 +34,7 @@ module top(input pllInClock, input pixelClock, input lcdVsync, input lcdHsync, i
 endmodule
 
 module parallelToLvds(
+  input [3:0] rgbTest,
   input lvdsInputClock,
   input pixelClock,
   input vsync,
@@ -62,7 +64,29 @@ module parallelToLvds(
 		lvdsTest3[1] <= vsync & 1;
 		lvdsTest3[2] <= hsync & 1;
 		lvdsTest3[0] <= de & 1;
-		lvdsTest3[6:3] <= 4'b1111;
+		
+		if (rgbTest[0] == 1) begin
+			lvdsTest1[6:1] <= 6'b111111;
+		end else begin
+			lvdsTest1[6:1] <= 6'b000000;
+		end
+		
+		if (rgbTest[1] == 1) begin
+			lvdsTest2[6:2] <= 5'b11111;
+			lvdsTest1[0] <= 1;
+		end else begin
+			lvdsTest2[6:2] <= 5'b00000;
+			lvdsTest1[0] <= 0;
+		end
+		
+		if (rgbTest[2] == 1) begin
+			lvdsTest3[6:3] <= 4'b1111;
+			lvdsTest2[1:0] <= 2'b11;
+		end else begin
+			lvdsTest3[6:3] <= 4'b0000;
+			lvdsTest2[1:0] <= 2'b00;
+		end
+		
 	  //end
 	  
 	  //if (enable) begin
