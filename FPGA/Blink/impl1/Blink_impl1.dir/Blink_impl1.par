@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jul 16 18:46:41 2024
+Wed Jul 17 00:59:09 2024
 
 C:/lscc/diamond/3.13/ispfpga\bin\nt64\par -f Blink_impl1.p2t
 Blink_impl1_map.ncd Blink_impl1.dir Blink_impl1.prf -gui -msgset
@@ -16,11 +16,11 @@ Preference file: Blink_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            0.602        0            0.177        0            04           Completed
+5_1   *      0            0.848        0            0.189        0            05           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 4 secs 
+Total (real) run time for 1-seed: 5 secs 
 
 par done!
 

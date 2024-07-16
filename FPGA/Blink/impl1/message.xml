@@ -232,11 +232,11 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(99): </Dynamic>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(75): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>4</Dynamic>
             <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>99</Navigation>
+            <Navigation>75</Navigation>
         </Message>
         <Message>
             <ID>35931002</ID>
@@ -276,6 +276,14 @@
             <ID>35001263</ID>
             <Severity>Warning</Severity>
             <Dynamic>pllInClock</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(79): </Dynamic>
+            <Dynamic>\myParallelToLvds/bitCounter__i3</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>79</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>

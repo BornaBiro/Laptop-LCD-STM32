@@ -23,19 +23,19 @@ Target Vendor:  LATTICE
 Target Device:  LFE5U-12FCABGA381
 Target Performance:   6
 Mapper:  sa5p00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  07/16/24  18:46:39
+Mapped on:  07/17/24  00:59:07
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     16 out of 12687 (0%)
-      PFU registers:           16 out of 12096 (0%)
+   Number of registers:     15 out of 12687 (0%)
+      PFU registers:           15 out of 12096 (0%)
       PIO registers:            0 out of   591 (0%)
-   Number of SLICEs:        14 out of  6048 (0%)
-      SLICEs as Logic/ROM:     14 out of  6048 (0%)
+   Number of SLICEs:        15 out of  6048 (0%)
+      SLICEs as Logic/ROM:     15 out of  6048 (0%)
       SLICEs as RAM:            0 out of  4536 (0%)
       SLICEs as Carry:          0 out of  6048 (0%)
-   Number of LUT4s:         15 out of 12096 (0%)
-      Number used as logic LUTs:         15
+   Number of LUT4s:         14 out of 12096 (0%)
+      Number used as logic LUTs:         14
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
@@ -87,11 +87,11 @@ Mapped on:  07/16/24  18:46:39
      Net myParallelToLvds/bitCounter_3__N_12: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net myParallelToLvds/bitCounter_0: 12 loads
-     Net myParallelToLvds/bitCounter_2: 9 loads
+     Net myParallelToLvds/bitCounter_0: 10 loads
      Net myParallelToLvds/bitCounter_1: 8 loads
-     Net myParallelToLvds/bitCounter_3: 3 loads
+     Net myParallelToLvds/bitCounter_2: 7 loads
      Net myParallelToLvds/bitCounter_3__N_12: 2 loads
+     Net lcdDe_c: 1 loads
      Net myParallelToLvds/lvdsTest2_2: 1 loads
      Net myParallelToLvds/lvdsTest2_3: 1 loads
      Net myParallelToLvds/lvdsTest3_0: 1 loads
@@ -172,38 +172,38 @@ WARNING - map: IO buffer missing for top level port pixelClock...logic will be
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| pllInClock          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | lcdDe               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pllInClock          | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | lcdHsync            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| lcdVsync            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[0]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[1]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-
-| RGBIN[2]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[3]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[4]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[5]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[6]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| lvdsLine2           | OUTPUT    | LVDS      |            |
-+---------------------+-----------+-----------+------------+
 | lvdsLine1           | OUTPUT    | LVDS      |            |
 +---------------------+-----------+-----------+------------+
-| RGBIN[7]            | INPUT     | LVCMOS33  |            |
+| lcdVsync            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | lvdsLine0           | OUTPUT    | LVDS      |            |
 +---------------------+-----------+-----------+------------+
+
+| RGBIN[6]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[2]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[7]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | lvdsOutClk          | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[5]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[3]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[0]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lvdsLine2           | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[1]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[4]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 
@@ -278,7 +278,7 @@ Instance Name: myLvdsPll/PLLInst_0
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 109 MB
+   Peak Memory Usage: 108 MB
         
 
 

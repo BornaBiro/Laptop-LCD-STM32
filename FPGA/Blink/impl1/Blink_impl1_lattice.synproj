@@ -2,8 +2,8 @@
 -d LFE5U-12F
 -t CABGA381
 -s 6
--frequency 200
--optimization_goal Timing
+-frequency 400
+-optimization_goal Balanced
 -bram_utilization 100
 -ramstyle Auto
 -romstyle auto

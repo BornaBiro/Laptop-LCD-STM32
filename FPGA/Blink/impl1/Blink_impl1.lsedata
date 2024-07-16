@@ -103,7 +103,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_2__I_0_44"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_2__I_0_43"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -135,7 +135,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_2__I_0_45"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_2__I_0_44"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -430,7 +430,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_3__I_0_47"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_3__I_0_46"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
@@ -593,7 +593,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_3__I_0_46"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_3__N_8_3__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
@@ -610,15 +610,15 @@
         <nets>
         <nitem  name = "myParallelToLvds/gnd"  />
         <nitem  name = "myParallelToLvds/pwr"  />
-        <nitem  name = "myParallelToLvds/bitCounter[3]"  />
-        <nitem  name = "myParallelToLvds/bitCounter[2]"  />
-        <nitem  name = "myParallelToLvds/bitCounter[1]"  />
-        <nitem  name = "myParallelToLvds/bitCounter[0]"  />
+        <nitem  name = "myParallelToLvds/bitCounter_3__N_8[3]"  />
+        <nitem  name = "myParallelToLvds/bitCounter_3__N_8[2]"  />
+        <nitem  name = "myParallelToLvds/bitCounter_3__N_8[1]"  />
+        <nitem  name = "myParallelToLvds/bitCounter_3__N_8[0]"  />
         <nitem  name = "myParallelToLvds/bitCounter_3__N_12"  />
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_3__I_0_43"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_3__I_0_45"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[3]"  direction = "in"  />
         <pitem  name = "d1[2]"  direction = "in"  />
@@ -819,7 +819,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/lvdsClockReg[0]_41"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "myParallelToLvds/lvdsClockReg_41"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -906,7 +906,7 @@
         <reg  name = "myParallelToLvds/lvdsTest1[1]_38"  />
         <reg  name = "myParallelToLvds/lvdsTest2[3]_39"  />
         <reg  name = "myParallelToLvds/lvdsTest2[2]_40"  />
-        <reg  name = "myParallelToLvds/lvdsClockReg[0]_41"  />
+        <reg  name = "myParallelToLvds/lvdsClockReg_41"  />
         <reg  name = "myParallelToLvds/bitCounter"  />
         <reg  name = "myParallelToLvds/lvdsTest3[5]_30"  />
     </regs>

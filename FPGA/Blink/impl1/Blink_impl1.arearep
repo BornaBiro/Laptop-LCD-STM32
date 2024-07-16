@@ -1,31 +1,31 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  16 of 12687 (0.126%)
+Register bits:  15 of 12687 (0.118%)
 I/O cells:      16
                                   Cell usage:
                                cell     count   Res Usage(%)
                             EHXPLLL         1          100.0
                             FD1S3AX        12          100.0
-                            FD1S3IX         4          100.0
+                            FD1S3IX         3          100.0
                                 GSR         1          100.0
                                  IB        12          100.0
-                               LUT4        14          100.0
+                               LUT4        13          100.0
                                  OB         4          100.0
                               PFUMX         2          100.0
 SUB MODULES
                             lvdsClk         1
                      parallelToLvds         1
-                              TOTAL        52
+                              TOTAL        50
 ----------------------------------------------------------------------
 Report for cell parallelToLvds.v1
 Instance Path : myParallelToLvds
                                   Cell usage:
                                cell     count   Res Usage(%)
                             FD1S3AX        12          100.0
-                            FD1S3IX         4          100.0
-                               LUT4        14          100.0
+                            FD1S3IX         3          100.0
+                               LUT4        13          100.0
                               PFUMX         2          100.0
-                              TOTAL        32
+                              TOTAL        30
 ----------------------------------------------------------------------
 Report for cell lvdsClk.v1
 Instance Path : myLvdsPll

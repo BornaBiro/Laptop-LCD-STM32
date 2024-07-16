@@ -12,7 +12,7 @@ WARNING - synthesis: input pad net 'pixelClock' has no legal load.
 WARNING - synthesis: DRC complete with 2 warnings.
 
 Design Results:
-     53 blocks expanded
+     51 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Blink_impl1.ngd.
