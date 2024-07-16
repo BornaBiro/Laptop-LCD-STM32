@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jul 16 00:59:31 2024
+Tue Jul 16 18:41:42 2024
 
 
 Command Line:  synthesis -f Blink_impl1_lattice.synproj -gui -msgset C:/Users/Borna/Documents/Projects/FPGA/Blink/promote.xml 
@@ -92,17 +92,20 @@ Analyzing Verilog file c:/users/borna/documents/projects/fpga/blink/pll/lvdsclk/
 Analyzing Verilog file c:/users/borna/documents/projects/fpga/blink/pll/pll.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Top module name (Verilog): top
-INFO - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(12): compiling module top. VERI-1018
+INFO - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(6): compiling module top. VERI-1018
 INFO - synthesis: c:/users/borna/documents/projects/fpga/blink/pll/lvdsclk/lvdsclk.v(8): compiling module lvdsClk. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(278): compiling module IB. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): compiling module VHI. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): compiling module VLO. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1696): compiling module EHXPLLL(CLKFB_DIV=7,CLKOP_DIV=2,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOP_CPHASE=1,FEEDBK_PATH="USERCLOCK",CLKOP_TRIM_POL="FALLING",CLKOS_TRIM_POL="FALLING"). VERI-1018
-INFO - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(36): compiling module parallelToLvds. VERI-1018
-WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(64): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(65): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(66): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(31): compiling module parallelToLvds. VERI-1018
+WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(57): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(58): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(59): expression size 32 truncated to fit in target size 1. VERI-1209
 WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(99): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(46): net lvdsTest1[6] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(47): net lvdsTest2[6] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/borna/documents/projects/fpga/blink/blink.v(48): net lvdsTest3[6] does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -110,16 +113,22 @@ Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.44.
 Top-level module name = top.
-WARNING - synthesis: I/O Port sw[3] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pixelClock 's net has no driver and is unused.
+######## Missing driver on net \myParallelToLvds/lvdsTest1[6]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest1[5]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest1[4]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest1[0]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest2[6]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest2[5]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest2[4]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest2[1]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest2[0]. Patching with GND.
+######## Missing driver on net \myParallelToLvds/lvdsTest3[6]. Patching with GND.
 
 
 
-WARNING - synthesis: I/O Port sw[3] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pixelClock 's net has no driver and is unused.
 WARNING - synthesis: Skipping pad insertion on pllInClock due to black_box_pad_pin attribute.
-Duplicate register/latch removal. \myParallelToLvds/lvdsTest1_i1 is a one-to-one match with \myParallelToLvds/lvdsTest2_i2.
-Duplicate register/latch removal. \myParallelToLvds/lvdsTest2_i1 is a one-to-one match with \myParallelToLvds/lvdsTest3_i4.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -129,46 +138,44 @@ Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'sw[3]' has no load.
-WARNING - synthesis: input pad net 'sw[3]' has no legal load.
 WARNING - synthesis: logical net 'pixelClock' has no load.
 WARNING - synthesis: input pad net 'pixelClock' has no legal load.
-WARNING - synthesis: DRC complete with 4 warnings.
+WARNING - synthesis: DRC complete with 2 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Blink_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 11 of 12687 (0 % )
+Number of register bits => 16 of 12687 (0 % )
 EHXPLLL => 1
-FD1S3AX => 7
+FD1S3AX => 12
 FD1S3IX => 4
 GSR => 1
-IB => 7
-LUT4 => 13
+IB => 12
+LUT4 => 14
 OB => 4
-PFUMX => 3
+PFUMX => 2
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : myLvdsPll/pllOutClock, loads : 12
+  Net : myLvdsPll/pllOutClock, loads : 17
   Net : buf_CLKI, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : myParallelToLvds/bitCounter_0, loads : 11
-  Net : myParallelToLvds/bitCounter_1, loads : 10
-  Net : myParallelToLvds/bitCounter_2, loads : 8
-  Net : myParallelToLvds/bitCounter_3__N_15, loads : 4
+  Net : myParallelToLvds/bitCounter_0, loads : 12
+  Net : myParallelToLvds/bitCounter_2, loads : 9
+  Net : myParallelToLvds/bitCounter_1, loads : 8
+  Net : myParallelToLvds/bitCounter_3__N_12, loads : 4
   Net : myParallelToLvds/bitCounter_3, loads : 3
-  Net : myParallelToLvds/lvdsTest2_1, loads : 3
-  Net : myParallelToLvds/lvdsTest1_0, loads : 3
-  Net : myParallelToLvds/lvdsTest1_6, loads : 2
-  Net : sw_c_2, loads : 1
-  Net : sw_c_1, loads : 1
+  Net : RGBIN_c_7, loads : 1
+  Net : RGBIN_c_6, loads : 1
+  Net : RGBIN_c_5, loads : 1
+  Net : RGBIN_c_4, loads : 1
+  Net : RGBIN_c_3, loads : 1
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -178,7 +185,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets pllOutClock]             |  200.000 MHz|  307.503 MHz|     2  
+clk0 [get_nets pllOutClock]             |  200.000 MHz|  305.904 MHz|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -186,10 +193,10 @@ clk0 [get_nets pllOutClock]             |  200.000 MHz|  307.503 MHz|     2
 All constraints were met.
 
 
-Peak Memory Usage: 72.598  MB
+Peak Memory Usage: 72.695  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.156  secs
+Elapsed CPU time for LSE flow : 0.172  secs
 --------------------------------------------------------------
 
 

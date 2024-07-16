@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
-Tue Jul 16 00:59:33 2024
+Tue Jul 16 18:46:41 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -62,9 +62,9 @@ Passed: The following path meets requirements by 0.653ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              myParallelToLvds/bitCounter_14__i0  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter_14__i1  (to pllOutClock +)
-                   FF                        myParallelToLvds/bitCounter_14__i0
+   Source:         FF         Q              myParallelToLvds/bitCounter_11__i0  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter_11__i1  (to pllOutClock +)
+                   FF                        myParallelToLvds/bitCounter_11__i0
 
    Delay:               1.902ns  (39.7% logic, 60.3% route), 2 logic levels.
 
@@ -80,9 +80,9 @@ Passed: The following path meets requirements by 0.653ns
 
    Name    Fanout   Delay (ns)          Site               Resource
 REG_DEL     ---     0.522 *s/SLICE_1.CLK to *ds/SLICE_1.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        11   e 0.573 *ds/SLICE_1.Q0 to *ds/SLICE_0.A1 myParallelToLvds/bitCounter_0
+ROUTE        12   e 0.573 *ds/SLICE_1.Q0 to *ds/SLICE_0.A1 myParallelToLvds/bitCounter_0
 CTOF_DEL    ---     0.234 *ds/SLICE_0.A1 to *ds/SLICE_0.F1 myParallelToLvds/SLICE_0
-ROUTE         2   e 0.573 *ds/SLICE_0.F1 to *s/SLICE_1.LSR myParallelToLvds/bitCounter_3__N_15 (to pllOutClock)
+ROUTE         2   e 0.573 *ds/SLICE_0.F1 to *s/SLICE_1.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
                   --------
                     1.902   (39.7% logic, 60.3% route), 2 logic levels.
 
@@ -117,7 +117,7 @@ All preferences were met.
 
 Found 2 clocks:
 
-Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 8
+Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 10
    Covered under: FREQUENCY NET "pllOutClock" 336.000000 MHz ;
 
 Clock Domain: buf_CLKI   Source: pllInClock.PAD   Loads: 1
@@ -130,11 +130,11 @@ Clock Domain: buf_CLKI   Source: pllInClock.PAD   Loads: 1
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 22 paths, 2 nets, and 30 connections (42.25% coverage)
+Constraints cover 22 paths, 2 nets, and 30 connections (37.50% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
-Tue Jul 16 00:59:33 2024
+Tue Jul 16 18:46:41 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -173,8 +173,8 @@ Passed: The following path meets requirements by 0.177ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              myParallelToLvds/bitCounter_14__i1  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter_14__i1  (to pllOutClock +)
+   Source:         FF         Q              myParallelToLvds/bitCounter_11__i1  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter_11__i1  (to pllOutClock +)
 
    Delay:               0.295ns  (80.0% logic, 20.0% route), 2 logic levels.
 
@@ -190,7 +190,7 @@ Passed: The following path meets requirements by 0.177ns
 
    Name    Fanout   Delay (ns)          Site               Resource
 REG_DEL     ---     0.161 *s/SLICE_1.CLK to *ds/SLICE_1.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10   e 0.058 *ds/SLICE_1.Q1 to *ds/SLICE_1.A1 myParallelToLvds/bitCounter_1
+ROUTE         8   e 0.058 *ds/SLICE_1.Q1 to *ds/SLICE_1.A1 myParallelToLvds/bitCounter_1
 CTOF_DEL    ---     0.075 *ds/SLICE_1.A1 to *ds/SLICE_1.F1 myParallelToLvds/SLICE_1
 ROUTE         1   e 0.001 *ds/SLICE_1.F1 to *s/SLICE_1.DI1 myParallelToLvds/n24 (to pllOutClock)
                   --------
@@ -225,7 +225,7 @@ All preferences were met.
 
 Found 2 clocks:
 
-Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 8
+Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 10
    Covered under: FREQUENCY NET "pllOutClock" 336.000000 MHz ;
 
 Clock Domain: buf_CLKI   Source: pllInClock.PAD   Loads: 1
@@ -238,7 +238,7 @@ Clock Domain: buf_CLKI   Source: pllInClock.PAD   Loads: 1
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 22 paths, 2 nets, and 30 connections (42.25% coverage)
+Constraints cover 22 paths, 2 nets, and 30 connections (37.50% coverage)
 
 
 

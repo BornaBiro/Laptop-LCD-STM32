@@ -94,7 +94,12 @@ int main(void)
   MX_GPIO_Init();
   MX_USART3_UART_Init();
   MX_LTDC_Init();
+  uint16_t *_fbPtr = (uint16_t*)buffer;
   /* USER CODE BEGIN 2 */
+  for (int i = 0; i < 50000; i++)
+  {
+	  _fbPtr[i] = 0x1234;
+  }
 
   /* USER CODE END 2 */
 
@@ -204,21 +209,21 @@ static void MX_LTDC_Init(void)
   hltdc.Init.TotalHeigh = 832;
   hltdc.Init.Backcolor.Blue = 0;
   hltdc.Init.Backcolor.Green = 0;
-  hltdc.Init.Backcolor.Red = 0;
+  hltdc.Init.Backcolor.Red = 255;
   if (HAL_LTDC_Init(&hltdc) != HAL_OK)
   {
     Error_Handler();
   }
   pLayerCfg.WindowX0 = 0;
-  pLayerCfg.WindowX1 = 0;
+  pLayerCfg.WindowX1 = 1280;
   pLayerCfg.WindowY0 = 0;
-  pLayerCfg.WindowY1 = 0;
-  pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888;
+  pLayerCfg.WindowY1 = 800;
+  pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB565;
   pLayerCfg.Alpha = 0;
   pLayerCfg.Alpha0 = 0;
   pLayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_CA;
   pLayerCfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_CA;
-  pLayerCfg.FBStartAdress = 0;
+  pLayerCfg.FBStartAdress = (uint32_t)buffer;
   pLayerCfg.ImageWidth = 0;
   pLayerCfg.ImageHeight = 0;
   pLayerCfg.Backcolor.Blue = 0;

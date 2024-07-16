@@ -1,0 +1,31 @@
+LCD P/N: B154EW08-V1
+
+Horizontal Active Area: 0x500 = 1280
+Vertical Active Area: 0x320 = 800
+
+Horizontal Blanking: 0x0A0 = 160
+Vertical Blanking: 0x017 = 23
+
+Horizontal Sync Width: 0x020 = 32
+Vertical Sync Width: 6
+
+Horizonal Sync Offset (front porch): 48
+Vertical Sync Offset (front porch): 3
+
+Horizontal back porch: Blanking - Sync - Front porch = 160 - 48 - 32 = 80
+Vertical back porch: Blanking - Sync - Front porch = 23 - 3 - 6 = 14
+
+STM32:
+VSYNC: PA4 (D24 NUCLEO) (GP2 FPGA - A9)
+HSYNC: PC6 (D16 NUCLEO)	(GN2 FPGA - B10)
+DE: PF10 (A5 NUCLEO)	(GP3 FPGA - B9)
+PCLK: PE14 (D4 NUCLEO) 	(GP0 FPGA - B11)
+
+R0 FPGA - GP4 (A7)
+R1 FPGA - GN4 (A8)
+R2 FPGA - GP5 (C8)
+G0 FPGA - GN5 (B8)
+G1 FPGA - GP6 (C6)
+B0 FPGA - GN6 (C7)
+B1 FPGA - GP7 (A6)
+B2 FPGA - GN7 (B6)

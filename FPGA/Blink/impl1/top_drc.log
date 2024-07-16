@@ -7,14 +7,12 @@ Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
 
 Running DRC...
 
-WARNING - synthesis: logical net 'sw[3]' has no load.
-WARNING - synthesis: input pad net 'sw[3]' has no legal load.
 WARNING - synthesis: logical net 'pixelClock' has no load.
 WARNING - synthesis: input pad net 'pixelClock' has no legal load.
-WARNING - synthesis: DRC complete with 4 warnings.
+WARNING - synthesis: DRC complete with 2 warnings.
 
 Design Results:
-     43 blocks expanded
+     53 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Blink_impl1.ngd.
