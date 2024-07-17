@@ -117,25 +117,6 @@
             <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
             <Navigation>23</Navigation>
         </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(41): Semantic error in &quot;IOBUF PORT &quot;pixelClock&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>pixelClock</Dynamic>
-            <Navigation>C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf</Navigation>
-            <Navigation>41</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>pixelClock</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pixelClock</Dynamic>
-        </Message>
     </Task>
     <Task name="Lattice_Synthesis">
         <Message>
@@ -197,10 +178,28 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(31): </Dynamic>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(30): </Dynamic>
             <Dynamic>parallelToLvds</Dynamic>
             <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>31</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(55): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(56): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
+            <Navigation>56</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
@@ -214,63 +213,11 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(58): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>58</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(59): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>59</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(75): </Dynamic>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(89): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>4</Dynamic>
             <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>75</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(46): </Dynamic>
-            <Dynamic>lvdsTest1[6]</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>46</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(47): </Dynamic>
-            <Dynamic>lvdsTest2[6]</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>47</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(48): </Dynamic>
-            <Dynamic>lvdsTest3[6]</Dynamic>
-            <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>48</Navigation>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pixelClock</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pixelClock</Dynamic>
+            <Navigation>89</Navigation>
         </Message>
         <Message>
             <ID>35001263</ID>
@@ -280,32 +227,14 @@
         <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(79): </Dynamic>
+            <Dynamic>c:/users/borna/documents/projects/fpga/blink/blink.v(93): </Dynamic>
             <Dynamic>\myParallelToLvds/bitCounter__i3</Dynamic>
             <Navigation>c:/users/borna/documents/projects/fpga/blink/blink.v</Navigation>
-            <Navigation>79</Navigation>
+            <Navigation>93</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>pixelClock</Dynamic>
-            <Navigation>pixelClock</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>pixelClock</Dynamic>
-        </Message>
-        <Message>
-            <ID>1163101</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">

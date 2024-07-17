@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Wed Jul 17 00:59:15 2024
+Wed Jul 17 20:47:27 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -42,143 +42,7 @@ Preference: FREQUENCY NET "pllOutClock" 336.000000 MHz ;
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 0.848ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
-                   FF                        myParallelToLvds/bitCounter__i0
-
-   Delay:               1.707ns  (44.1% logic, 55.9% route), 2 logic levels.
-
- Constraint Details:
-
-      1.707ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
-      2.976ns delay constraint less
-      0.000ns skew and
-      0.421ns LSR_SET requirement (totaling 2.555ns) by 0.848ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.519     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.581      R3C14C.Q1 to      R3C14B.C0 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.234      R3C14B.C0 to      R3C14B.F0 myParallelToLvds/SLICE_13
-ROUTE         2     0.373      R3C14B.F0 to     R3C14C.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
-                  --------
-                    1.707   (44.1% logic, 55.9% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.848ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
-
-   Delay:               1.707ns  (44.1% logic, 55.9% route), 2 logic levels.
-
- Constraint Details:
-
-      1.707ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
-      2.976ns delay constraint less
-      0.000ns skew and
-      0.421ns LSR_SET requirement (totaling 2.555ns) by 0.848ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.519     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.581      R3C14C.Q1 to      R3C14B.C0 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.234      R3C14B.C0 to      R3C14B.F0 myParallelToLvds/SLICE_13
-ROUTE         2     0.373      R3C14B.F0 to     R3C14D.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
-                  --------
-                    1.707   (44.1% logic, 55.9% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 1.034ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
-
-   Delay:               1.521ns  (49.7% logic, 50.3% route), 2 logic levels.
-
- Constraint Details:
-
-      1.521ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2 meets
-      2.976ns delay constraint less
-      0.000ns skew and
-      0.421ns LSR_SET requirement (totaling 2.555ns) by 1.034ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.522     R3C14D.CLK to      R3C14D.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
-ROUTE         7     0.392      R3C14D.Q0 to      R3C14B.D0 myParallelToLvds/bitCounter_2
-CTOF_DEL    ---     0.234      R3C14B.D0 to      R3C14B.F0 myParallelToLvds/SLICE_13
-ROUTE         2     0.373      R3C14B.F0 to     R3C14D.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
-                  --------
-                    1.521   (49.7% logic, 50.3% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 1.034ns
+Passed: The following path meets requirements by 0.836ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -186,314 +50,450 @@ Passed: The following path meets requirements by 1.034ns
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
                    FF                        myParallelToLvds/bitCounter__i0
 
-   Delay:               1.521ns  (49.7% logic, 50.3% route), 2 logic levels.
+   Delay:               1.719ns  (44.0% logic, 56.0% route), 2 logic levels.
 
  Constraint Details:
 
-      1.521ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_1 meets
+      1.719ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_1 meets
       2.976ns delay constraint less
       0.000ns skew and
-      0.421ns LSR_SET requirement (totaling 2.555ns) by 1.034ns
+      0.421ns LSR_SET requirement (totaling 2.555ns) by 0.836ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.522     R3C14D.CLK to      R3C14D.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
-ROUTE         7     0.392      R3C14D.Q0 to      R3C14B.D0 myParallelToLvds/bitCounter_2
-CTOF_DEL    ---     0.234      R3C14B.D0 to      R3C14B.F0 myParallelToLvds/SLICE_13
-ROUTE         2     0.373      R3C14B.F0 to     R3C14C.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
+REG_DEL     ---     0.522     R5C18A.CLK to      R5C18A.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
+ROUTE         7     0.590      R5C18A.Q0 to      R5C18D.C0 myParallelToLvds/bitCounter_2
+CTOF_DEL    ---     0.234      R5C18D.C0 to      R5C18D.F0 myParallelToLvds/SLICE_21
+ROUTE         2     0.373      R5C18D.F0 to     R5C18C.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
                   --------
-                    1.521   (49.7% logic, 50.3% route), 2 logic levels.
+                    1.719   (44.0% logic, 56.0% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 1.651ns
+Passed: The following path meets requirements by 0.836ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_41  (to pllOutClock +)
-
-   Delay:               1.583ns  (47.6% logic, 52.4% route), 2 logic levels.
-
- Constraint Details:
-
-      1.583ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
-      2.976ns delay constraint less
-      0.000ns skew and
-     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.651ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.519     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.830      R3C14C.Q1 to      R2C14D.B0 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.234      R2C14D.B0 to      R2C14D.F0 myParallelToLvds/SLICE_0
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 myParallelToLvds/lvdsClock_N_14 (to pllOutClock)
-                  --------
-                    1.583   (47.6% logic, 52.4% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R2C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 1.724ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
+   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
 
-   Delay:               1.510ns  (49.9% logic, 50.1% route), 2 logic levels.
+   Delay:               1.719ns  (44.0% logic, 56.0% route), 2 logic levels.
 
  Constraint Details:
 
-      1.510ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
+      1.719ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2 meets
       2.976ns delay constraint less
       0.000ns skew and
-     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.724ns
+      0.421ns LSR_SET requirement (totaling 2.555ns) by 0.836ns
 
  Physical Path Details:
 
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
+      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.519     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.757      R3C14C.Q1 to      R3C14D.B0 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.234      R3C14D.B0 to      R3C14D.F0 myParallelToLvds/SLICE_2
-ROUTE         1     0.000      R3C14D.F0 to     R3C14D.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
+REG_DEL     ---     0.522     R5C18A.CLK to      R5C18A.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
+ROUTE         7     0.590      R5C18A.Q0 to      R5C18D.C0 myParallelToLvds/bitCounter_2
+CTOF_DEL    ---     0.234      R5C18D.C0 to      R5C18D.F0 myParallelToLvds/SLICE_21
+ROUTE         2     0.373      R5C18D.F0 to     R5C18A.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
                   --------
-                    1.510   (49.9% logic, 50.1% route), 2 logic levels.
+                    1.719   (44.0% logic, 56.0% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 1.807ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_41  (to pllOutClock +)
-
-   Delay:               1.427ns  (53.0% logic, 47.0% route), 2 logic levels.
-
- Constraint Details:
-
-      1.427ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
-      2.976ns delay constraint less
-      0.000ns skew and
-     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.807ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.522     R3C14C.CLK to      R3C14C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10     0.671      R3C14C.Q0 to      R2C14D.C0 myParallelToLvds/bitCounter_0
-CTOF_DEL    ---     0.234      R2C14D.C0 to      R2C14D.F0 myParallelToLvds/SLICE_0
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 myParallelToLvds/lvdsClock_N_14 (to pllOutClock)
-                  --------
-                    1.427   (53.0% logic, 47.0% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R2C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 1.903ns
+Passed: The following path meets requirements by 1.024ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
+                   FF                        myParallelToLvds/bitCounter__i0
 
-   Delay:               1.337ns  (56.3% logic, 43.7% route), 2 logic levels.
+   Delay:               1.531ns  (49.2% logic, 50.8% route), 2 logic levels.
 
  Constraint Details:
 
-      1.337ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
+      1.531ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
       2.976ns delay constraint less
       0.000ns skew and
-     -0.264ns DIN_SET requirement (totaling 3.240ns) by 1.903ns
+      0.421ns LSR_SET requirement (totaling 2.555ns) by 1.024ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.519     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.584      R3C14C.Q1 to      R3C14C.A1 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.234      R3C14C.A1 to      R3C14C.F1 myParallelToLvds/SLICE_1
-ROUTE         1     0.000      R3C14C.F1 to     R3C14C.DI1 myParallelToLvds/bitCounter_3_N_8_1 (to pllOutClock)
+REG_DEL     ---     0.519     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.405      R5C18C.Q1 to      R5C18D.D0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.234      R5C18D.D0 to      R5C18D.F0 myParallelToLvds/SLICE_21
+ROUTE         2     0.373      R5C18D.F0 to     R5C18C.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
                   --------
-                    1.337   (56.3% logic, 43.7% route), 2 logic levels.
+                    1.531   (49.2% logic, 50.8% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 2.013ns
+Passed: The following path meets requirements by 1.024ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_41  (to pllOutClock +)
-
-   Delay:               1.221ns  (61.9% logic, 38.1% route), 2 logic levels.
-
- Constraint Details:
-
-      1.221ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0 meets
-      2.976ns delay constraint less
-      0.000ns skew and
-     -0.258ns DIN_SET requirement (totaling 3.234ns) by 2.013ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.522     R3C14D.CLK to      R3C14D.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
-ROUTE         7     0.465      R3C14D.Q0 to      R2C14D.D0 myParallelToLvds/bitCounter_2
-CTOF_DEL    ---     0.234      R2C14D.D0 to      R2C14D.F0 myParallelToLvds/SLICE_0
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 myParallelToLvds/lvdsClock_N_14 (to pllOutClock)
-                  --------
-                    1.221   (61.9% logic, 38.1% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R2C14D.CLK pllOutClock
-                  --------
-                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 2.072ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
+   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
 
-   Delay:               1.162ns  (65.1% logic, 34.9% route), 2 logic levels.
+   Delay:               1.531ns  (49.2% logic, 50.8% route), 2 logic levels.
 
  Constraint Details:
 
-      1.162ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
+      1.531ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
       2.976ns delay constraint less
       0.000ns skew and
-     -0.258ns DIN_SET requirement (totaling 3.234ns) by 2.072ns
+      0.421ns LSR_SET requirement (totaling 2.555ns) by 1.024ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.522     R3C14C.CLK to      R3C14C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10     0.406      R3C14C.Q0 to      R3C14D.D0 myParallelToLvds/bitCounter_0
-CTOF_DEL    ---     0.234      R3C14D.D0 to      R3C14D.F0 myParallelToLvds/SLICE_2
-ROUTE         1     0.000      R3C14D.F0 to     R3C14D.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
+REG_DEL     ---     0.519     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.405      R5C18C.Q1 to      R5C18D.D0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.234      R5C18D.D0 to      R5C18D.F0 myParallelToLvds/SLICE_21
+ROUTE         2     0.373      R5C18D.F0 to     R5C18A.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
                   --------
-                    1.162   (65.1% logic, 34.9% route), 2 logic levels.
+                    1.531   (49.2% logic, 50.8% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     2.141  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     2.141   (0.0% logic, 100.0% route), 0 logic levels.
 
-Report:  469.925MHz is the maximum frequency for this preference.
+
+Passed: The following path meets requirements by 1.417ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_25  (to pllOutClock +)
+
+   Delay:               1.817ns  (41.4% logic, 58.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.817ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
+      2.976ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.417ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.519     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     1.064      R5C18C.Q1 to      R7C12C.B0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.234      R7C12C.B0 to      R7C12C.F0 myParallelToLvds/SLICE_0
+ROUTE         1     0.000      R7C12C.F0 to     R7C12C.DI0 myParallelToLvds/lvdsClock_N_13 (to pllOutClock)
+                  --------
+                    1.817   (41.4% logic, 58.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R7C12C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 1.581ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_25  (to pllOutClock +)
+
+   Delay:               1.653ns  (45.7% logic, 54.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.653ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0 meets
+      2.976ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.581ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522     R5C18A.CLK to      R5C18A.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
+ROUTE         7     0.897      R5C18A.Q0 to      R7C12C.C0 myParallelToLvds/bitCounter_2
+CTOF_DEL    ---     0.234      R7C12C.C0 to      R7C12C.F0 myParallelToLvds/SLICE_0
+ROUTE         1     0.000      R7C12C.F0 to     R7C12C.DI0 myParallelToLvds/lvdsClock_N_13 (to pllOutClock)
+                  --------
+                    1.653   (45.7% logic, 54.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R7C12C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 1.690ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
+
+   Delay:               1.544ns  (49.0% logic, 51.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.544ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
+      2.976ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.690ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.788      R5C18C.Q0 to      R5C18A.A0 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.234      R5C18A.A0 to      R5C18A.F0 myParallelToLvds/SLICE_2
+ROUTE         1     0.000      R5C18A.F0 to     R5C18A.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
+                  --------
+                    1.544   (49.0% logic, 51.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 1.704ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
+
+   Delay:               1.536ns  (49.2% logic, 50.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.536ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
+      2.976ns delay constraint less
+      0.000ns skew and
+     -0.264ns DIN_SET requirement (totaling 3.240ns) by 1.704ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.780      R5C18C.Q0 to      R5C18C.B1 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.234      R5C18C.B1 to      R5C18C.F1 myParallelToLvds/SLICE_1
+ROUTE         1     0.000      R5C18C.F1 to     R5C18C.DI1 myParallelToLvds/bitCounter_3_N_8_1 (to pllOutClock)
+                  --------
+                    1.536   (49.2% logic, 50.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 1.710ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
+
+   Delay:               1.524ns  (49.4% logic, 50.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.524ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
+      2.976ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.710ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.519     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.771      R5C18C.Q1 to      R5C18A.B0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.234      R5C18A.B0 to      R5C18A.F0 myParallelToLvds/SLICE_2
+ROUTE         1     0.000      R5C18A.F0 to     R5C18A.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
+                  --------
+                    1.524   (49.4% logic, 50.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 1.771ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_25  (to pllOutClock +)
+
+   Delay:               1.463ns  (51.7% logic, 48.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.463ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
+      2.976ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 3.234ns) by 1.771ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.707      R5C18C.Q0 to      R7C12C.D0 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.234      R7C12C.D0 to      R7C12C.F0 myParallelToLvds/SLICE_0
+ROUTE         1     0.000      R7C12C.F0 to     R7C12C.DI0 myParallelToLvds/lvdsClock_N_13 (to pllOutClock)
+                  --------
+                    1.463   (51.7% logic, 48.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     2.141  PLL_BL0.CLKOP to     R7C12C.CLK pllOutClock
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  467.290MHz is the maximum frequency for this preference.
 
 
 ================================================================================
@@ -508,7 +508,7 @@ Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
 FREQUENCY NET "pllOutClock" 336.000000  |             |             |
-MHz ;                                   |  336.000 MHz|  469.925 MHz|   2  
+MHz ;                                   |  336.000 MHz|  467.290 MHz|   2  
                                         |             |             |
 FREQUENCY NET "buf_CLKI" 48.000000 MHz  |             |             |
 ;                                       |            -|            -|   0  
@@ -524,7 +524,7 @@ Clock Domains Analysis
 
 Found 2 clocks:
 
-Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 10
+Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 16
    Covered under: FREQUENCY NET "pllOutClock" 336.000000 MHz ;
 
 Clock Domain: buf_CLKI   Source: pllInClock.PAD   Loads: 1
@@ -537,11 +537,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 13 paths, 2 nets, and 28 connections (38.89% coverage)
+Constraints cover 13 paths, 2 nets, and 34 connections (31.48% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Wed Jul 17 00:59:15 2024
+Wed Jul 17 20:47:27 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -570,227 +570,92 @@ Preference: FREQUENCY NET "pllOutClock" 336.000000 MHz ;
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 0.189ns
+Passed: The following path meets requirements by 0.177ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
 
-   Delay:               0.307ns  (77.2% logic, 22.8% route), 2 logic levels.
+   Delay:               0.295ns  (80.3% logic, 19.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.307ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2 meets
+      0.295ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2 meets
       0.118ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.189ns
+      0.000ns skew requirement (totaling 0.118ns) by 0.177ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14D.CLK to      R3C14D.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
-ROUTE         7     0.070      R3C14D.Q0 to      R3C14D.C0 myParallelToLvds/bitCounter_2
-CTOF_DEL    ---     0.075      R3C14D.C0 to      R3C14D.F0 myParallelToLvds/SLICE_2
-ROUTE         1     0.000      R3C14D.F0 to     R3C14D.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
+REG_DEL     ---     0.162     R5C18A.CLK to      R5C18A.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
+ROUTE         7     0.058      R5C18A.Q0 to      R5C18A.D0 myParallelToLvds/bitCounter_2
+CTOF_DEL    ---     0.075      R5C18A.D0 to      R5C18A.F0 myParallelToLvds/SLICE_2
+ROUTE         1     0.000      R5C18A.F0 to     R5C18A.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
                   --------
-                    0.307   (77.2% logic, 22.8% route), 2 logic levels.
+                    0.295   (80.3% logic, 19.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.189ns
+Passed: The following path meets requirements by 0.190ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i0  (to pllOutClock +)
 
-   Delay:               0.307ns  (77.2% logic, 22.8% route), 2 logic levels.
+   Delay:               0.308ns  (76.9% logic, 23.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.307ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
+      0.308ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
       0.118ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.189ns
+      0.000ns skew requirement (totaling 0.118ns) by 0.190ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14C.CLK to      R3C14C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10     0.070      R3C14C.Q0 to      R3C14C.C0 myParallelToLvds/bitCounter_0
-CTOF_DEL    ---     0.075      R3C14C.C0 to      R3C14C.F0 myParallelToLvds/SLICE_1
-ROUTE         1     0.000      R3C14C.F0 to     R3C14C.DI0 myParallelToLvds/bitCounter_3_N_8_0 (to pllOutClock)
+REG_DEL     ---     0.162     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.071      R5C18C.Q0 to      R5C18C.C0 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.075      R5C18C.C0 to      R5C18C.F0 myParallelToLvds/SLICE_1
+ROUTE         1     0.000      R5C18C.F0 to     R5C18C.DI0 myParallelToLvds/bitCounter_3_N_8_0 (to pllOutClock)
                   --------
-                    0.307   (77.2% logic, 22.8% route), 2 logic levels.
+                    0.308   (76.9% logic, 23.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.244ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
-
-   Delay:               0.362ns  (65.5% logic, 34.5% route), 2 logic levels.
-
- Constraint Details:
-
-      0.362ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
-      0.118ns DIN_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.244ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14C.CLK to      R3C14C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10     0.125      R3C14C.Q0 to      R3C14C.D1 myParallelToLvds/bitCounter_0
-CTOF_DEL    ---     0.075      R3C14C.D1 to      R3C14C.F1 myParallelToLvds/SLICE_1
-ROUTE         1     0.000      R3C14C.F1 to     R3C14C.DI1 myParallelToLvds/bitCounter_3_N_8_1 (to pllOutClock)
-                  --------
-                    0.362   (65.5% logic, 34.5% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.244ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
-
-   Delay:               0.362ns  (65.5% logic, 34.5% route), 2 logic levels.
-
- Constraint Details:
-
-      0.362ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
-      0.118ns DIN_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.244ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14C.CLK to      R3C14C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10     0.125      R3C14C.Q0 to      R3C14D.D0 myParallelToLvds/bitCounter_0
-CTOF_DEL    ---     0.075      R3C14D.D0 to      R3C14D.F0 myParallelToLvds/SLICE_2
-ROUTE         1     0.000      R3C14D.F0 to     R3C14D.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
-                  --------
-                    0.362   (65.5% logic, 34.5% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.257ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_41  (to pllOutClock +)
-
-   Delay:               0.375ns  (63.2% logic, 36.8% route), 2 logic levels.
-
- Constraint Details:
-
-      0.375ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0 meets
-      0.118ns DIN_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.257ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14D.CLK to      R3C14D.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
-ROUTE         7     0.138      R3C14D.Q0 to      R2C14D.D0 myParallelToLvds/bitCounter_2
-CTOF_DEL    ---     0.075      R2C14D.D0 to      R2C14D.F0 myParallelToLvds/SLICE_0
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 myParallelToLvds/lvdsClock_N_14 (to pllOutClock)
-                  --------
-                    0.375   (63.2% logic, 36.8% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R2C14D.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -816,10 +681,10 @@ Passed: The following path meets requirements by 0.272ns
       Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.161     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.154      R3C14C.Q1 to      R3C14C.A1 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.075      R3C14C.A1 to      R3C14C.F1 myParallelToLvds/SLICE_1
-ROUTE         1     0.000      R3C14C.F1 to     R3C14C.DI1 myParallelToLvds/bitCounter_3_N_8_1 (to pllOutClock)
+REG_DEL     ---     0.161     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.154      R5C18C.Q1 to      R5C18C.A1 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.075      R5C18C.A1 to      R5C18C.F1 myParallelToLvds/SLICE_1
+ROUTE         1     0.000      R5C18C.F1 to     R5C18C.DI1 myParallelToLvds/bitCounter_3_N_8_1 (to pllOutClock)
                   --------
                     0.390   (60.5% logic, 39.5% route), 2 logic levels.
 
@@ -828,195 +693,330 @@ ROUTE         1     0.000      R3C14C.F1 to     R3C14C.DI1 myParallelToLvds/bitC
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.275ns
+Passed: The following path meets requirements by 0.341ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_41  (to pllOutClock +)
-
-   Delay:               0.393ns  (60.3% logic, 39.7% route), 2 logic levels.
-
- Constraint Details:
-
-      0.393ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
-      0.118ns DIN_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.275ns
-
- Physical Path Details:
-
-      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14C.CLK to      R3C14C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE        10     0.156      R3C14C.Q0 to      R2C14D.C0 myParallelToLvds/bitCounter_0
-CTOF_DEL    ---     0.075      R2C14D.C0 to      R2C14D.F0 myParallelToLvds/SLICE_0
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 myParallelToLvds/lvdsClock_N_14 (to pllOutClock)
-                  --------
-                    0.393   (60.3% logic, 39.7% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R2C14D.CLK pllOutClock
-                  --------
-                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.342ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
    Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
 
-   Delay:               0.460ns  (51.3% logic, 48.7% route), 2 logic levels.
+   Delay:               0.459ns  (51.6% logic, 48.4% route), 2 logic levels.
 
  Constraint Details:
 
-      0.460ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
+      0.459ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
       0.118ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.342ns
+      0.000ns skew requirement (totaling 0.118ns) by 0.341ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.161     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.224      R3C14C.Q1 to      R3C14D.B0 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.075      R3C14D.B0 to      R3C14D.F0 myParallelToLvds/SLICE_2
-ROUTE         1     0.000      R3C14D.F0 to     R3C14D.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
+REG_DEL     ---     0.162     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.222      R5C18C.Q0 to      R5C18A.A0 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.075      R5C18A.A0 to      R5C18A.F0 myParallelToLvds/SLICE_2
+ROUTE         1     0.000      R5C18A.F0 to     R5C18A.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
                   --------
-                    0.460   (51.3% logic, 48.7% route), 2 logic levels.
+                    0.459   (51.6% logic, 48.4% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.359ns
+Passed: The following path meets requirements by 0.345ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_41  (to pllOutClock +)
+   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_25  (to pllOutClock +)
 
-   Delay:               0.477ns  (49.5% logic, 50.5% route), 2 logic levels.
+   Delay:               0.463ns  (51.2% logic, 48.8% route), 2 logic levels.
 
  Constraint Details:
 
-      0.477ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
+      0.463ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
       0.118ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.118ns) by 0.359ns
+      0.000ns skew requirement (totaling 0.118ns) by 0.345ns
 
  Physical Path Details:
 
       Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.161     R3C14C.CLK to      R3C14C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
-ROUTE         8     0.241      R3C14C.Q1 to      R2C14D.B0 myParallelToLvds/bitCounter_1
-CTOF_DEL    ---     0.075      R2C14D.B0 to      R2C14D.F0 myParallelToLvds/SLICE_0
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 myParallelToLvds/lvdsClock_N_14 (to pllOutClock)
+REG_DEL     ---     0.162     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.226      R5C18C.Q0 to      R7C12C.D0 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.075      R7C12C.D0 to      R7C12C.F0 myParallelToLvds/SLICE_0
+ROUTE         1     0.000      R7C12C.F0 to     R7C12C.DI0 myParallelToLvds/lvdsClock_N_13 (to pllOutClock)
                   --------
-                    0.477   (49.5% logic, 50.5% route), 2 logic levels.
+                    0.463   (51.2% logic, 48.8% route), 2 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R2C14D.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R7C12C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.550ns
+Passed: The following path meets requirements by 0.346ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
-   Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
-                   FF                        myParallelToLvds/bitCounter__i0
+   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter__i2  (to pllOutClock +)
 
-   Delay:               0.481ns  (49.3% logic, 50.7% route), 2 logic levels.
+   Delay:               0.464ns  (50.9% logic, 49.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.481ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_1 meets
-     -0.069ns LSR_HLD and
+      0.464ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2 meets
+      0.118ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.069ns) by 0.550ns
+      0.000ns skew requirement (totaling 0.118ns) by 0.346ns
 
  Physical Path Details:
 
-      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_1:
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.162     R3C14D.CLK to      R3C14D.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
-ROUTE         7     0.121      R3C14D.Q0 to      R3C14B.D0 myParallelToLvds/bitCounter_2
-CTOF_DEL    ---     0.075      R3C14B.D0 to      R3C14B.F0 myParallelToLvds/SLICE_13
-ROUTE         2     0.123      R3C14B.F0 to     R3C14C.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
+REG_DEL     ---     0.161     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.228      R5C18C.Q1 to      R5C18A.B0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.075      R5C18A.B0 to      R5C18A.F0 myParallelToLvds/SLICE_2
+ROUTE         1     0.000      R5C18A.F0 to     R5C18A.DI0 myParallelToLvds/bitCounter_3_N_8_2 (to pllOutClock)
                   --------
-                    0.481   (49.3% logic, 50.7% route), 2 logic levels.
+                    0.464   (50.9% logic, 49.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14D.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.347ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i0  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
+
+   Delay:               0.465ns  (51.0% logic, 49.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.465ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
+      0.118ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.347ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.162     R5C18C.CLK to      R5C18C.Q0 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        13     0.228      R5C18C.Q0 to      R5C18C.B1 myParallelToLvds/bitCounter_0
+CTOF_DEL    ---     0.075      R5C18C.B1 to      R5C18C.F1 myParallelToLvds/SLICE_1
+ROUTE         1     0.000      R5C18C.F1 to     R5C18C.DI1 myParallelToLvds/bitCounter_3_N_8_1 (to pllOutClock)
+                  --------
+                    0.465   (51.0% logic, 49.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        10     0.633  PLL_BL0.CLKOP to     R3C14C.CLK pllOutClock
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.358ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i2  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_25  (to pllOutClock +)
+
+   Delay:               0.476ns  (49.8% logic, 50.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.476ns physical path delay myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0 meets
+      0.118ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.358ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_2 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.162     R5C18A.CLK to      R5C18A.Q0 myParallelToLvds/SLICE_2 (from pllOutClock)
+ROUTE         7     0.239      R5C18A.Q0 to      R7C12C.C0 myParallelToLvds/bitCounter_2
+CTOF_DEL    ---     0.075      R7C12C.C0 to      R7C12C.F0 myParallelToLvds/SLICE_0
+ROUTE         1     0.000      R7C12C.F0 to     R7C12C.DI0 myParallelToLvds/lvdsClock_N_13 (to pllOutClock)
+                  --------
+                    0.476   (49.8% logic, 50.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18A.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R7C12C.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.446ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/lvdsClockReg_25  (to pllOutClock +)
+
+   Delay:               0.564ns  (41.8% logic, 58.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.564ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0 meets
+      0.118ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.446ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.161     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.328      R5C18C.Q1 to      R7C12C.B0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.075      R7C12C.B0 to      R7C12C.F0 myParallelToLvds/SLICE_0
+ROUTE         1     0.000      R7C12C.F0 to     R7C12C.DI0 myParallelToLvds/lvdsClock_N_13 (to pllOutClock)
+                  --------
+                    0.564   (41.8% logic, 58.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R7C12C.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.554ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              myParallelToLvds/bitCounter__i1  (from pllOutClock +)
+   Destination:    FF         Data in        myParallelToLvds/bitCounter__i1  (to pllOutClock +)
+                   FF                        myParallelToLvds/bitCounter__i0
+
+   Delay:               0.485ns  (48.7% logic, 51.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.485ns physical path delay myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1 meets
+     -0.069ns LSR_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.069ns) by 0.554ns
+
+ Physical Path Details:
+
+      Data path myParallelToLvds/SLICE_1 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.161     R5C18C.CLK to      R5C18C.Q1 myParallelToLvds/SLICE_1 (from pllOutClock)
+ROUTE        12     0.126      R5C18C.Q1 to      R5C18D.D0 myParallelToLvds/bitCounter_1
+CTOF_DEL    ---     0.075      R5C18D.D0 to      R5C18D.F0 myParallelToLvds/SLICE_21
+ROUTE         2     0.123      R5C18D.F0 to     R5C18C.LSR myParallelToLvds/bitCounter_3__N_12 (to pllOutClock)
+                  --------
+                    0.485   (48.7% logic, 51.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
+                  --------
+                    0.633   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path myLvdsPll/PLLInst_0 to myParallelToLvds/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     0.633  PLL_BL0.CLKOP to     R5C18C.CLK pllOutClock
                   --------
                     0.633   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1033,7 +1033,7 @@ Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
 FREQUENCY NET "pllOutClock" 336.000000  |             |             |
-MHz ;                                   |     0.000 ns|     0.189 ns|   2  
+MHz ;                                   |     0.000 ns|     0.177 ns|   2  
                                         |             |             |
 FREQUENCY NET "buf_CLKI" 48.000000 MHz  |             |             |
 ;                                       |            -|            -|   0  
@@ -1049,7 +1049,7 @@ Clock Domains Analysis
 
 Found 2 clocks:
 
-Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 10
+Clock Domain: pllOutClock   Source: myLvdsPll/PLLInst_0.CLKOP   Loads: 16
    Covered under: FREQUENCY NET "pllOutClock" 336.000000 MHz ;
 
 Clock Domain: buf_CLKI   Source: pllInClock.PAD   Loads: 1
@@ -1062,7 +1062,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 13 paths, 2 nets, and 28 connections (38.89% coverage)
+Constraints cover 13 paths, 2 nets, and 34 connections (31.48% coverage)
 
 
 

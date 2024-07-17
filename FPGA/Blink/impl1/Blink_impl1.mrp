@@ -15,25 +15,25 @@ Target Vendor:  LATTICE
 Target Device:  LFE5U-12FCABGA381
 Target Performance:   6
 Mapper:  sa5p00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  07/17/24  00:59:07
+Mapped on:  07/17/24  20:47:20
 
 Design Summary
 --------------
 
-   Number of registers:     15 out of 12687 (0%)
-      PFU registers:           15 out of 12096 (0%)
+   Number of registers:     25 out of 12687 (0%)
+      PFU registers:           25 out of 12096 (0%)
       PIO registers:            0 out of   591 (0%)
-   Number of SLICEs:        15 out of  6048 (0%)
-      SLICEs as Logic/ROM:     15 out of  6048 (0%)
+   Number of SLICEs:        23 out of  6048 (0%)
+      SLICEs as Logic/ROM:     23 out of  6048 (0%)
       SLICEs as RAM:            0 out of  4536 (0%)
       SLICEs as Carry:          0 out of  6048 (0%)
-   Number of LUT4s:         14 out of 12096 (0%)
-      Number used as logic LUTs:         14
+   Number of LUT4s:         18 out of 12096 (0%)
+      Number used as logic LUTs:         18
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
-   Number of PIO sites used: 20 out of 197 (10%)
-      Number of PIO sites used for single ended IOs: 12
+   Number of PIO sites used: 30 out of 197 (15%)
+      Number of PIO sites used for single ended IOs: 22
       Number of PIO sites used for differential IOs: 8 (represented by 4 PIO
      comps in NCD)
    Number of block RAMs:  0 out of 32 (0%)
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  07/17/24  00:59:07
+Design:  top                                           Date:  07/17/24  20:47:20
 
 Design Summary (cont)
 ---------------------
@@ -81,7 +81,7 @@ Design Summary (cont)
    Number of Used DSP ALU Sites:  0 out of 28 (0 %)
    Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
    Number of clocks:  2
-     Net pllOutClock: 10 loads, 10 rising, 0 falling (Driver:
+     Net pllOutClock: 16 loads, 16 rising, 0 falling (Driver:
      myLvdsPll/PLLInst_0 )
      Net buf_CLKI: 1 loads, 1 rising, 0 falling (Driver: PIO pllInClock )
    Number of Clock Enables:  0
@@ -89,21 +89,21 @@ Design Summary (cont)
      Net myParallelToLvds/bitCounter_3__N_12: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net myParallelToLvds/bitCounter_0: 10 loads
-     Net myParallelToLvds/bitCounter_1: 8 loads
+     Net myParallelToLvds/bitCounter_0: 13 loads
+     Net myParallelToLvds/bitCounter_1: 12 loads
      Net myParallelToLvds/bitCounter_2: 7 loads
      Net myParallelToLvds/bitCounter_3__N_12: 2 loads
      Net lcdDe_c: 1 loads
-     Net myParallelToLvds/lvdsTest2_2: 1 loads
-     Net myParallelToLvds/lvdsTest2_3: 1 loads
-     Net myParallelToLvds/lvdsTest3_0: 1 loads
-     Net myParallelToLvds/lvdsTest3_1: 1 loads
-     Net myParallelToLvds/lvdsTest3_4: 1 loads
+     Net lvdsOutClk_c: 1 loads
+     Net myParallelToLvds/lvdsClock_N_13: 1 loads
+     Net myParallelToLvds/lvdsTest1_2: 1 loads
+     Net myParallelToLvds/lvdsTest1_3: 1 loads
+     Net myParallelToLvds/lvdsTest2_0: 1 loads
 
 
 
 
-   Number of warnings:  16
+   Number of warnings:  13
    Number of errors:    0
      
 
@@ -132,7 +132,7 @@ WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(15):
 
 
 
-Design:  top                                           Date:  07/17/24  00:59:07
+Design:  top                                           Date:  07/17/24  20:47:20
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -165,13 +165,6 @@ WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(23):
      Semantic error in "IOBUF PORT "ftdi_txden" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
      Port "ftdi_txden" does not exist in the design. This preference has been
      disabled.
-WARNING - map: C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf(41):
-     Semantic error in "IOBUF PORT "pixelClock" IO_TYPE=LVCMOS33 ;": Port
-     "pixelClock" does not exist in the design. This preference has been
-     disabled.
-WARNING - map: input pad net 'pixelClock' has no legal load.
-WARNING - map: IO buffer missing for top level port pixelClock...logic will be
-     discarded.
 
 IO (PIO) Attributes
 -------------------
@@ -180,47 +173,67 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| lcdDe               | INPUT     | LVCMOS33  |            |
+| RGBIN[7]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | pllInClock          | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| lcdHsync            | INPUT     | LVCMOS33  |            |
+| RGBIN[8]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | lvdsLine1           | OUTPUT    | LVDS      |            |
 +---------------------+-----------+-----------+------------+
-| lcdVsync            | INPUT     | LVCMOS33  |            |
+| RGBIN[9]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| lvdsLine0           | OUTPUT    | LVDS      |            |
+| RGBIN[4]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| RGBIN[6]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[1]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lcdDe               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lcdHsync            | INPUT     | LVCMOS33  |            |
 
                                     Page 3
 
 
 
 
-Design:  top                                           Date:  07/17/24  00:59:07
+Design:  top                                           Date:  07/17/24  20:47:20
 
 IO (PIO) Attributes (cont)
 --------------------------
-| RGBIN[6]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| RGBIN[2]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[7]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| lvdsOutClk          | OUTPUT    | LVDS      |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[5]            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RGBIN[3]            | INPUT     | LVCMOS33  |            |
+| lcdVsync            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | RGBIN[0]            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| RGBIN[5]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lvdsLine0           | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[16]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[3]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[12]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[17]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lvdsOutClk          | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[15]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[13]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[10]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | lvdsLine2           | OUTPUT    | LVDS      |            |
 +---------------------+-----------+-----------+------------+
-| RGBIN[1]            | INPUT     | LVCMOS33  |            |
+| RGBIN[11]           | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| RGBIN[4]            | INPUT     | LVCMOS33  |            |
+| RGBIN[2]            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGBIN[14]           | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
@@ -245,6 +258,16 @@ PLL 1:                                     Pin/Node Value
   Feedback Signal:                         NODE     pllOutClock
   Reset Signal:                                     NONE
   Standby Signal:                          NODE     GND_net
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  07/17/24  20:47:20
+
+PLL/DLL Summary (cont)
+----------------------
   Input Clock Frequency (MHz):                      48.0000
   Output Clock(P) Frequency (MHz):                  336.0000
   CLKOP Post Divider A Input:                       DIVA
@@ -258,16 +281,6 @@ PLL 1:                                     Pin/Node Value
   FB_MODE:                                          USERCLOCK
   CLKI Divider:                                     1
   CLKFB Divider:                                    7
-
-                                    Page 4
-
-
-
-
-Design:  top                                           Date:  07/17/24  00:59:07
-
-PLL/DLL Summary (cont)
-----------------------
   CLKOP Divider:                                    2
   CLKOS Divider:                                    1
   CLKOS2 Divider:                                   1
@@ -299,19 +312,6 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 108 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

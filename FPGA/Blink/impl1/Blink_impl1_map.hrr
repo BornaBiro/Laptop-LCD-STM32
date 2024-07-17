@@ -3,22 +3,22 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      15.00        100.0
-                                  LUT4	      14.00        100.0
-                                 IOBUF	         16        100.0
-                                PFUREG	         15        100.0
+                                  SLIC	      23.00        100.0
+                                  LUT4	      18.00        100.0
+                                 IOBUF	         26        100.0
+                                PFUREG	         25        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                        parallelToLvds	          1        93.3
+                        parallelToLvds	          1        95.7
                                lvdsClk	          1         0.0
 ---------------------------------------------------
 Report for cell parallelToLvds
    Instance path: top/myParallelToLvds
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      14.00        93.3
-                                  LUT4	      13.00        92.9
-                                PFUREG	         15        100.0
+                                  SLIC	      22.00        95.7
+                                  LUT4	      17.00        94.4
+                                PFUREG	         25        100.0
 ---------------------------------------------------
 Report for cell lvdsClk
    Instance path: top/myLvdsPll

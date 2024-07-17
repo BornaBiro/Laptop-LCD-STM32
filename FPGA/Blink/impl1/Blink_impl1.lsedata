@@ -20,10 +20,20 @@
 <unit name = "top">
 
     <!--
-        Top Level Pins: 17
+        Top Level Pins: 26
     -->
 
     <pins>
+        <pitem  name = "RGBIN[17]"  direction = "in"  />
+        <pitem  name = "RGBIN[16]"  direction = "in"  />
+        <pitem  name = "RGBIN[15]"  direction = "in"  />
+        <pitem  name = "RGBIN[14]"  direction = "in"  />
+        <pitem  name = "RGBIN[13]"  direction = "in"  />
+        <pitem  name = "RGBIN[12]"  direction = "in"  />
+        <pitem  name = "RGBIN[11]"  direction = "in"  />
+        <pitem  name = "RGBIN[10]"  direction = "in"  />
+        <pitem  name = "RGBIN[9]"  direction = "in"  />
+        <pitem  name = "RGBIN[8]"  direction = "in"  />
         <pitem  name = "RGBIN[7]"  direction = "in"  />
         <pitem  name = "RGBIN[6]"  direction = "in"  />
         <pitem  name = "RGBIN[5]"  direction = "in"  />
@@ -33,7 +43,6 @@
         <pitem  name = "RGBIN[1]"  direction = "in"  />
         <pitem  name = "RGBIN[0]"  direction = "in"  />
         <pitem  name = "pllInClock"  direction = "in"  />
-        <pitem  name = "pixelClock"  direction = "in"  />
         <pitem  name = "lcdVsync"  direction = "in"  />
         <pitem  name = "lcdHsync"  direction = "in"  />
         <pitem  name = "lcdDe"  direction = "in"  />
@@ -44,7 +53,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 33
+        Instances in netlist: 25
     -->
 
     <instance  name = "myLvdsPll/PLLInst_0"  library = "work"  arch = ""  type = "comb">
@@ -103,7 +112,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_2__I_0_43"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_2__I_0_27"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -135,7 +144,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_2__I_0_44"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_2__I_0_28"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -272,7 +281,7 @@
         <nitem  name = "myParallelToLvds/gnd"  />
         <nitem  name = "myParallelToLvds/pwr"  />
         <nitem  name = "lcdDe"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3_0__N_7[0]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3_6__N_7[0]"  />
         </nets>
     </instance>
 
@@ -349,7 +358,7 @@
         <nitem  name = "myParallelToLvds/gnd"  />
         <nitem  name = "myParallelToLvds/pwr"  />
         <nitem  name = "lcdVsync"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3_1__N_6[0]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3_6__N_6[0]"  />
         </nets>
     </instance>
 
@@ -426,11 +435,11 @@
         <nitem  name = "myParallelToLvds/gnd"  />
         <nitem  name = "myParallelToLvds/pwr"  />
         <nitem  name = "lcdHsync"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3_2__N_5[0]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3_6__N_5[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_3__I_0_46"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_3__I_0_30"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
@@ -618,7 +627,7 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/bitCounter_3__I_0_45"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "myParallelToLvds/bitCounter_3__I_0_29"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[3]"  direction = "in"  />
         <pitem  name = "d1[2]"  direction = "in"  />
@@ -649,180 +658,116 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/lvdsTest3[4]_31"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "myParallelToLvds/lvdsTest1"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "myParallelToLvds/gnd"  />
         <nitem  name = "RGBIN[6]"  />
-        <nitem  name = "pllOutClock"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3[4]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest3[3]_32"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "RGBIN[7]"  />
-        <nitem  name = "pllOutClock"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3[3]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest3[2]_33"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        <pitem  name = "d"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "pllOutClock"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3[2]"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3_2__N_5[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest3[1]_34"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        <pitem  name = "d"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "pllOutClock"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3[1]"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3_1__N_6[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest3[0]_35"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        <pitem  name = "d"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "pllOutClock"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3[0]"  />
-        <nitem  name = "myParallelToLvds/lvdsTest3_0__N_7[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest1[3]_36"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
+        <nitem  name = "RGBIN[5]"  />
+        <nitem  name = "RGBIN[4]"  />
+        <nitem  name = "RGBIN[3]"  />
+        <nitem  name = "RGBIN[2]"  />
+        <nitem  name = "RGBIN[1]"  />
         <nitem  name = "RGBIN[0]"  />
         <nitem  name = "pllOutClock"  />
+        <nitem  name = "myParallelToLvds/lvdsTest1[6]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest1[5]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest1[4]"  />
         <nitem  name = "myParallelToLvds/lvdsTest1[3]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest1[2]_37"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "RGBIN[1]"  />
-        <nitem  name = "pllOutClock"  />
         <nitem  name = "myParallelToLvds/lvdsTest1[2]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest1[1]_38"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "RGBIN[2]"  />
-        <nitem  name = "pllOutClock"  />
         <nitem  name = "myParallelToLvds/lvdsTest1[1]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest1[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/lvdsTest2[3]_39"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "myParallelToLvds/lvdsTest2"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "RGBIN[3]"  />
+        <nitem  name = "RGBIN[13]"  />
+        <nitem  name = "RGBIN[12]"  />
+        <nitem  name = "RGBIN[11]"  />
+        <nitem  name = "RGBIN[10]"  />
+        <nitem  name = "RGBIN[9]"  />
+        <nitem  name = "RGBIN[8]"  />
+        <nitem  name = "RGBIN[7]"  />
         <nitem  name = "pllOutClock"  />
+        <nitem  name = "myParallelToLvds/lvdsTest2[6]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest2[5]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest2[4]"  />
         <nitem  name = "myParallelToLvds/lvdsTest2[3]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "myParallelToLvds/lvdsTest2[2]_40"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "RGBIN[4]"  />
-        <nitem  name = "pllOutClock"  />
         <nitem  name = "myParallelToLvds/lvdsTest2[2]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest2[1]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest2[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/lvdsClockReg_41"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "myParallelToLvds/lvdsClockReg_25"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
         <pitem  name = "clk"  direction = "in"  />
         <pitem  name = "q"  direction = "out"  />
         <pitem  name = "d"  direction = "in"  />
@@ -838,12 +783,12 @@
 
     <instance  name = "myParallelToLvds/bitCounter"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
         <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
@@ -871,20 +816,56 @@
         </nets>
     </instance>
 
-    <instance  name = "myParallelToLvds/lvdsTest3[5]_30"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "myParallelToLvds/lvdsTest3"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
         </pins>
 
         <nets>
         <nitem  name = "myParallelToLvds/gnd"  />
-        <nitem  name = "RGBIN[5]"  />
+        <nitem  name = "RGBIN[17]"  />
+        <nitem  name = "RGBIN[16]"  />
+        <nitem  name = "RGBIN[15]"  />
+        <nitem  name = "RGBIN[14]"  />
         <nitem  name = "pllOutClock"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3[6]"  />
         <nitem  name = "myParallelToLvds/lvdsTest3[5]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3[4]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3[3]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3[2]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3[1]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3[0]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3_6__N_7[0]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3_6__N_6[0]"  />
+        <nitem  name = "myParallelToLvds/lvdsTest3_6__N_5[0]"  />
         </nets>
     </instance>
 
@@ -892,23 +873,15 @@
     <instance  name = "myLvdsPll"  />
     <instance  name = "myParallelToLvds"  />
     <!--
-        REG instances in netlist: 13
+        REG instances in netlist: 5
     -->
 
     <regs>
-        <reg  name = "myParallelToLvds/lvdsTest3[4]_31"  />
-        <reg  name = "myParallelToLvds/lvdsTest3[3]_32"  />
-        <reg  name = "myParallelToLvds/lvdsTest3[2]_33"  />
-        <reg  name = "myParallelToLvds/lvdsTest3[1]_34"  />
-        <reg  name = "myParallelToLvds/lvdsTest3[0]_35"  />
-        <reg  name = "myParallelToLvds/lvdsTest1[3]_36"  />
-        <reg  name = "myParallelToLvds/lvdsTest1[2]_37"  />
-        <reg  name = "myParallelToLvds/lvdsTest1[1]_38"  />
-        <reg  name = "myParallelToLvds/lvdsTest2[3]_39"  />
-        <reg  name = "myParallelToLvds/lvdsTest2[2]_40"  />
-        <reg  name = "myParallelToLvds/lvdsClockReg_41"  />
+        <reg  name = "myParallelToLvds/lvdsTest1"  />
+        <reg  name = "myParallelToLvds/lvdsTest2"  />
+        <reg  name = "myParallelToLvds/lvdsClockReg_25"  />
         <reg  name = "myParallelToLvds/bitCounter"  />
-        <reg  name = "myParallelToLvds/lvdsTest3[5]_30"  />
+        <reg  name = "myParallelToLvds/lvdsTest3"  />
     </regs>
 
     <!--

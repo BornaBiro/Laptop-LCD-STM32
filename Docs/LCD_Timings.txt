@@ -15,17 +15,29 @@ Vertical Sync Offset (front porch): 3
 Horizontal back porch: Blanking - Sync - Front porch = 160 - 48 - 32 = 80
 Vertical back porch: Blanking - Sync - Front porch = 23 - 3 - 6 = 14
 
-STM32:
-VSYNC: PA4 (D24 NUCLEO) (GP2 FPGA - A9)
-HSYNC: PC6 (D16 NUCLEO)	(GN2 FPGA - B10)
-DE: PF10 (A5 NUCLEO)	(GP3 FPGA - B9)
-PCLK: PE14 (D4 NUCLEO) 	(GP0 FPGA - B11)
-
-R0 FPGA - GP4 (A7)
-R1 FPGA - GN4 (A8)
-R2 FPGA - GP5 (C8)
-G0 FPGA - GN5 (B8)
-G1 FPGA - GP6 (C6)
-B0 FPGA - GN6 (C7)
-B1 FPGA - GP7 (A6)
-B2 FPGA - GN7 (B6)
+Connections ULX3S <-> STM32
+PCLK = FPGA B11 (GP0)
+VSYNC = FPGA C11 (GN0)
+HSYNC = FPGA A10 (GP1)
+DE = FPGA A11 (GN1)
+------------------------------
+R0 = FPGA A9 (GP2) - GND
+R1 = FPGA B10 (GN2) - R3 STM32
+R2 = FPGA B9 (GP3) -  R4 STM32
+R3 = FPGA C10 (GN3) - R5 STM32
+R4 = FPGA A7 (GP4) - R6 STM32
+R5 = FPGA A8 (GN4) - R7 STM32
+-----------------------------
+G0 = FPGA C8 (GP5) - G2 STM32
+G1 = FPGA B8 (GN5) - G3 STM32
+G2 = FPGA C6 (GP6) - G4 STM32
+G3 = FPGA C7 (GN6) - G5 STM32
+G4 = FPGA A6 (GP7) - G6 STM32
+G5 = FPGA B6 (GN7) - G7 STM32
+-----------------------------
+B0 = FPGA C4 (GP10) - GND
+B1 = FPGA B4 (GN10) - B3 STM32
+B2 = FPGA F4 (GP11) - B4 STM32
+B3 = FPGA E3 (GN11) - B5 STM32
+B4 = FPGA G3 (GP12) - B6 STM32
+B5 = FPGA F3 (GN12) - B7 STM32

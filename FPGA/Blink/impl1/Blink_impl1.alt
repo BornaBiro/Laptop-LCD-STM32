@@ -1,25 +1,35 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Wed Jul 17 00:59:18 2024 *
+NOTE DATE CREATED: Wed Jul 17 20:47:29 2024 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LFE5U-12F-6CABGA381 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS lcdDe : B9 : in *
+NOTE PINS RGBIN[7] : B8 : in *
 NOTE PINS pllInClock : B11 : in *
-NOTE PINS lcdHsync : B10 : in *
-NOTE PINS lvdsLine1 : A2 : out *
-NOTE PINS lcdVsync : A9 : in *
+NOTE PINS RGBIN[8] : C6 : in *
+NOTE PINS lvdsLine1 : C18 : out *
+NOTE PINS RGBIN[9] : C7 : in *
+NOTE PINS RGBIN[4] : A7 : in *
+NOTE PINS RGBIN[6] : C8 : in *
+NOTE PINS RGBIN[1] : B10 : in *
+NOTE PINS lcdDe : A11 : in *
+NOTE PINS lcdHsync : A10 : in *
+NOTE PINS lcdVsync : C11 : in *
+NOTE PINS RGBIN[0] : A9 : in *
+NOTE PINS RGBIN[5] : A8 : in *
 NOTE PINS lvdsLine0 : D18 : out *
-NOTE PINS RGBIN[6] : A6 : in *
-NOTE PINS RGBIN[2] : C8 : in *
-NOTE PINS RGBIN[7] : B6 : in *
-NOTE PINS lvdsOutClk : A4 : out *
-NOTE PINS RGBIN[5] : C7 : in *
-NOTE PINS RGBIN[3] : B8 : in *
-NOTE PINS RGBIN[0] : A7 : in *
+NOTE PINS RGBIN[16] : G3 : in *
+NOTE PINS RGBIN[3] : C10 : in *
+NOTE PINS RGBIN[12] : C4 : in *
+NOTE PINS RGBIN[17] : F3 : in *
+NOTE PINS lvdsOutClk : A2 : out *
+NOTE PINS RGBIN[15] : E3 : in *
+NOTE PINS RGBIN[13] : B4 : in *
+NOTE PINS RGBIN[10] : A6 : in *
 NOTE PINS lvdsLine2 : F17 : out *
-NOTE PINS RGBIN[1] : A8 : in *
-NOTE PINS RGBIN[4] : C6 : in *
+NOTE PINS RGBIN[11] : B6 : in *
+NOTE PINS RGBIN[2] : B9 : in *
+NOTE PINS RGBIN[14] : F4 : in *
 NOTE PINS SYSCONFIG_PIN_D1 : V2 : inout *
 NOTE PINS SYSCONFIG_PIN_D0 : W2 : inout *
 NOTE PINS SYSCONFIG_PIN_HOLDN : R2 : inout *

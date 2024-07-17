@@ -3,7 +3,7 @@
 // pllInClock and pixelClock are both RGB Pixel clocks.
 // lcdVsync, lcdHsync and lcdDe are RGB/DPI/LTDC signals from the STM32.
 // lvdsOutClk, lvdsLine0, lvdsLine1 and lvdsLine2 are LVDS lines to the Laptop LCD screen.
-module top(input [7:0] RGBIN, input pllInClock, input pixelClock, input lcdVsync, input lcdHsync, input lcdDe, output lvdsOutClk, output lvdsLine0, output lvdsLine1, output lvdsLine2);
+module top(input [17:0] RGBIN, input pllInClock, input lcdVsync, input lcdHsync, input lcdDe, output lvdsOutClk, output lvdsLine0, output lvdsLine1, output lvdsLine2);
   
   // Initialize PLL inside FPGA. Ref. clock is RGB (DPI) Pixel Clock.
   lvdsClk myLvdsPll (
@@ -16,7 +16,6 @@ module top(input [7:0] RGBIN, input pllInClock, input pixelClock, input lcdVsync
   parallelToLvds myParallelToLvds (
 	.rgbIn(RGBIN),
     .lvdsInputClock(pllOutClock),
-    .pixelClock(pixelClock),
     .vsync(lcdVsync),
     .hsync(lcdHsync),
     .de(lcdDe),
@@ -29,9 +28,8 @@ module top(input [7:0] RGBIN, input pllInClock, input pixelClock, input lcdVsync
 endmodule
 
 module parallelToLvds(
-	input [7:0] rgbIn,
+	input [17:0] rgbIn,
 	input lvdsInputClock,
-	input pixelClock,
 	input vsync,
 	input hsync,
 	input de,
@@ -54,17 +52,33 @@ module parallelToLvds(
 	assign lvdsClock = lvdsClockReg;
 	
 	always @ (posedge lvdsInputClock) begin
-		lvdsTest3[0] = de & 1;
-		lvdsTest3[1] = vsync & 1;
-		lvdsTest3[2] = hsync & 1;
-		lvdsTest1[3] = rgbIn[0];
-		lvdsTest1[2] = rgbIn[1];
-		lvdsTest1[1] = rgbIn[2]; 
-		lvdsTest2[3] = rgbIn[3];
-		lvdsTest2[2] = rgbIn[4];
-		lvdsTest3[5] = rgbIn[5];
-		lvdsTest3[4] = rgbIn[6];
-		lvdsTest3[3] = rgbIn[7];
+		lvdsTest3[0] <= de & 1;
+		lvdsTest3[1] <= vsync & 1;
+		lvdsTest3[2] <= hsync & 1;
+		
+		// Red color:
+		lvdsTest1[6] <= rgbIn[0];   // R0
+		lvdsTest1[5] <= rgbIn[1];   // R1
+		lvdsTest1[4] <= rgbIn[2];   // R2
+		lvdsTest1[3] <= rgbIn[3];   // R3
+		lvdsTest1[2] <= rgbIn[4];   // R4
+		lvdsTest1[1] <= rgbIn[5];   // R5
+		
+		// Green color:
+		lvdsTest1[0] <= rgbIn[6];   // G0
+		lvdsTest2[6] <= rgbIn[7];   // G1
+		lvdsTest2[5] <= rgbIn[8];   // G2
+		lvdsTest2[4] <= rgbIn[9];   // G3
+		lvdsTest2[3] <= rgbIn[10];  // G4
+		lvdsTest2[2] <= rgbIn[11];  // G5
+		
+		// Blue Color:
+		lvdsTest2[1] <= rgbIn[12];  // B0
+		lvdsTest2[0] <= rgbIn[13];  // B1
+		lvdsTest3[6] <= rgbIn[14];  // B2
+		lvdsTest3[5] <= rgbIn[15];  // B3
+		lvdsTest3[4] <= rgbIn[16];  // B4
+		lvdsTest3[3] <= rgbIn[17];  // B5
 
 		if (bitCounter > 1 && bitCounter < 5) begin
 			lvdsClockReg = 0;

@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "img3.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,15 +97,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   uint16_t *_fbPtr = (uint16_t*)buffer;
 
-  for (int i = 0; i < 50000; i++)
+  for (int i = 0; i < (354*354); i++)
   {
-  	  _fbPtr[i] = 0b0011100000000000;
+	  _fbPtr[i] = image3[i];
+	  //_fbPtr[i] = 0b0000000000100000;
+
   }
 
-  for (int i = 21554; i < 24000; i++)
-  {
-	  _fbPtr[i] = 0b0000000000011111;
-  }
   HAL_LTDC_SetAddress(&hltdc, buffer, 0);
 
   /* USER CODE END 2 */
@@ -221,17 +219,17 @@ static void MX_LTDC_Init(void)
     Error_Handler();
   }
   pLayerCfg.WindowX0 = 5;
-  pLayerCfg.WindowX1 = 255;
+  pLayerCfg.WindowX1 = 359;
   pLayerCfg.WindowY0 = 5;
-  pLayerCfg.WindowY1 = 255;
+  pLayerCfg.WindowY1 = 359;
   pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB565;
   pLayerCfg.Alpha = 255;
-  pLayerCfg.Alpha0 = 255;
-  pLayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_CA;
-  pLayerCfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_CA;
+  pLayerCfg.Alpha0 = 0;
+  pLayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+  pLayerCfg.BlendingFactor2 = LTDC_BLENDING_FACTOR1_PAxCA;
   pLayerCfg.FBStartAdress = buffer;
-  pLayerCfg.ImageWidth = 250;
-  pLayerCfg.ImageHeight = 250;
+  pLayerCfg.ImageWidth = 354;
+  pLayerCfg.ImageHeight = 354;
   pLayerCfg.Backcolor.Blue = 0;
   pLayerCfg.Backcolor.Green = 0;
   pLayerCfg.Backcolor.Red = 0;
