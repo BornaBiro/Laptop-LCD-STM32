@@ -120,7 +120,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 108 MB
+Peak Memory Usage: 109 MB
 
 Dumping design to file Blink_impl1_map.ncd.
 
@@ -151,7 +151,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Wed Jul 17 20:47:21 2024
+Sun Jul 21 20:38:55 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -184,7 +184,7 @@ Constraints cover 13 paths, 2 nets, and 22 connections (20.37% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Wed Jul 17 20:47:21 2024
+Sun Jul 21 20:38:55 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -239,7 +239,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Blink_impl1_map.ncd"
-Wed Jul 17 20:47:22 2024
+Sun Jul 21 20:38:55 2024
 
 PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Borna/Documents/Projects/FPGA/Blink/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 Blink_impl1_map.ncd Blink_impl1.dir/5_1.ncd Blink_impl1.prf
@@ -291,12 +291,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ...................
 Placer score = 28977.
-Finished Placer Phase 1.  REAL time: 2 secs 
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  28977
-Finished Placer Phase 2.  REAL time: 2 secs 
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 ------------------ Clock Report ------------------
@@ -363,9 +363,9 @@ Dumping design to file Blink_impl1.dir/5_1.ncd.
 0 connections routed; 108 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 4 secs 
 
-Start NBR router at 20:47:25 07/17/24
+Start NBR router at 20:38:59 07/21/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -380,26 +380,26 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 20:47:25 07/17/24
+Start NBR special constraint process at 20:38:59 07/21/24
 
-Start NBR section for initial routing at 20:47:25 07/17/24
+Start NBR section for initial routing at 20:38:59 07/21/24
 Level 1, iteration 1
 1(0.00%) conflict; 77(71.30%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.999ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 0.999ns/0.000ns; real time: 4 secs 
 Level 2, iteration 1
 1(0.00%) conflict; 77(71.30%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.999ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 0.999ns/0.000ns; real time: 4 secs 
 Level 3, iteration 1
 1(0.00%) conflict; 68(62.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.982ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 0.982ns/0.000ns; real time: 4 secs 
 Level 4, iteration 1
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.974ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 0.974ns/0.000ns; real time: 4 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 20:47:26 07/17/24
+Start NBR section for normal routing at 20:38:59 07/21/24
 Level 1, iteration 1
 1(0.00%) conflict; 1(0.93%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 0.974ns/0.000ns; real time: 4 secs 
@@ -422,14 +422,14 @@ Level 4, iteration 4
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 0.974ns/0.000ns; real time: 4 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 20:47:26 07/17/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 20:38:59 07/21/24
 
-Start NBR section for re-routing at 20:47:26 07/17/24
+Start NBR section for re-routing at 20:38:59 07/21/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 0.836ns/0.000ns; real time: 4 secs 
 
-Start NBR section for post-routing at 20:47:26 07/17/24
+Start NBR section for post-routing at 20:38:59 07/21/24
 
 End NBR router with 0 unrouted connection
 
@@ -445,7 +445,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 3 secs 
-Total REAL time: 4 secs 
+Total REAL time: 5 secs 
 Completely routed.
 End of route.  108 routed (100.00%); 0 unrouted.
 
@@ -465,7 +465,7 @@ PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 3 secs 
-Total REAL time to completion: 4 secs 
+Total REAL time to completion: 5 secs 
 
 par done!
 
@@ -502,7 +502,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Wed Jul 17 20:47:27 2024
+Sun Jul 21 20:39:00 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -535,7 +535,7 @@ Constraints cover 13 paths, 2 nets, and 34 connections (31.48% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Wed Jul 17 20:47:27 2024
+Sun Jul 21 20:39:00 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -580,7 +580,7 @@ Cumulative negative slack: 0 (0+0)
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 162 MB
+Peak Memory Usage: 163 MB
 
 
 tmcheck -par "Blink_impl1.par" 

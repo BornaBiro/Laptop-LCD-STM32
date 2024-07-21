@@ -1,14 +1,6 @@
-#Start recording tcl command: 7/1/2024 20:44:33
+#Start recording tcl command: 7/21/2024 19:37:52
 #Project Location: C:/Users/Borna/Documents/Projects/FPGA/Blink; Project name: Blink
-prj_project new -name "Blink" -impl "impl1" -dev LFE5U-12F-6BG381I -synthesis "lse"
-prj_project save
-prj_src add "C:/Users/Borna/Documents/Projects/FPGA/Blink/blink.v"
-prj_run Export -impl impl1 -task Bitgen
-prj_src add -exclude "C:/Users/Borna/Downloads/ulx3s_v20.lpf"
-prj_src remove "C:/Users/Borna/Downloads/ulx3s_v20.lpf"
-prj_src add -exclude "C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf"
-prj_src enable "C:/Users/Borna/Documents/Projects/FPGA/Blink/ulx3s_v20.lpf"
-prj_src remove "C:/Users/Borna/Documents/Projects/FPGA/Blink/Blink.lpf"
+prj_project open "C:/Users/Borna/Documents/Projects/FPGA/Blink/Blink.ldf"
 prj_run Export -impl impl1 -task Bitgen
 prj_run Export -impl impl1 -task Bitgen
 prj_run Export -impl impl1 -task Bitgen
@@ -31,4 +23,4 @@ prj_run Export -impl impl1 -task Bitgen
 prj_run Export -impl impl1 -task Bitgen
 prj_run Export -impl impl1 -task Bitgen
 prj_run Export -impl impl1 -task Bitgen
-#Stop recording: 7/1/2024 22:22:14
+#Stop recording: 7/21/2024 22:33:47

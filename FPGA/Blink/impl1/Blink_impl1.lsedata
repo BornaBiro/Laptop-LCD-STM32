@@ -1,8 +1,8 @@
 <top name = "top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "myLvdsPll/buf_CLKI"  type = "net" />
     <clockitem name = "pllOutClock"  type = "net" />
+    <clockitem name = "myLvdsPll/buf_CLKI"  type = "net" />
 </clocks>
 
 <!--

@@ -6,39 +6,39 @@ Performance Grade:      6
 PACKAGE:          CABGA381
 Package Status:                     Final          Version 1.44
 
-Wed Jul 17 20:47:24 2024
+Sun Jul 21 20:38:58 2024
 
 Pinout by Port Name:
-+------------+----------+-------------+-------+-----------+-----------------------------------+
-| Port Name  | Pin/Bank | Buffer Type | Site  | BC Enable | Properties                        |
-+------------+----------+-------------+-------+-----------+-----------------------------------+
-| RGBIN[0]   | A9/0     | LVCMOS33_IN | PT24A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[10]  | A6/0     | LVCMOS33_IN | PT4A  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[11]  | B6/0     | LVCMOS33_IN | PT4B  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[12]  | C4/7     | LVCMOS25_IN | PL5A  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[13]  | B4/7     | LVCMOS25_IN | PL5B  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[14]  | F4/7     | LVCMOS25_IN | PL11A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[15]  | E3/7     | LVCMOS25_IN | PL11B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[16]  | G3/7     | LVCMOS25_IN | PL23A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[17]  | F3/7     | LVCMOS25_IN | PL23B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[1]   | B10/0    | LVCMOS33_IN | PT24B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[2]   | B9/0     | LVCMOS33_IN | PT22A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[3]   | C10/0    | LVCMOS33_IN | PT22B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[4]   | A7/0     | LVCMOS33_IN | PT18A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[5]   | A8/0     | LVCMOS33_IN | PT18B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[6]   | C8/0     | LVCMOS33_IN | PT15A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[7]   | B8/0     | LVCMOS33_IN | PT15B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[8]   | C6/0     | LVCMOS33_IN | PT11A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| RGBIN[9]   | C7/0     | LVCMOS33_IN | PT11B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| lcdDe      | A11/0    | LVCMOS33_IN | PT27B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| lcdHsync   | A10/0    | LVCMOS33_IN | PT27A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| lcdVsync   | C11/0    | LVCMOS33_IN | PT29B |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-| lvdsLine0  | D18/2    | LVDS_OUT    | PR5A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
-| lvdsLine1  | C18/2    | LVDS_OUT    | PR2A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
-| lvdsLine2  | F17/2    | LVDS_OUT    | PR8A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
-| lvdsOutClk | A2/7     | LVDS_OUT    | PL14A |           | DIFFDRIVE:3.5 CLAMP:ON            |
-| pllInClock | B11/0    | LVCMOS33_IN | PT29A |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
-+------------+----------+-------------+-------+-----------+-----------------------------------+
++------------+----------+-------------+-------+-----------+---------------------------------+
+| Port Name  | Pin/Bank | Buffer Type | Site  | BC Enable | Properties                      |
++------------+----------+-------------+-------+-----------+---------------------------------+
+| RGBIN[0]   | A9/0     | LVCMOS25_IN | PT24A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[10]  | A6/0     | LVCMOS33_IN | PT4A  |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[11]  | B6/0     | LVCMOS25_IN | PT4B  |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[12]  | C4/7     | LVCMOS25_IN | PL5A  |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[13]  | B4/7     | LVCMOS25_IN | PL5B  |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[14]  | F4/7     | LVCMOS25_IN | PL11A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[15]  | E3/7     | LVCMOS25_IN | PL11B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[16]  | G3/7     | LVCMOS25_IN | PL23A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[17]  | F3/7     | LVCMOS25_IN | PL23B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[1]   | B10/0    | LVCMOS25_IN | PT24B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[2]   | B9/0     | LVCMOS25_IN | PT22A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[3]   | C10/0    | LVCMOS25_IN | PT22B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[4]   | A7/0     | LVCMOS25_IN | PT18A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[5]   | A8/0     | LVCMOS25_IN | PT18B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[6]   | C8/0     | LVCMOS25_IN | PT15A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[7]   | B8/0     | LVCMOS25_IN | PT15B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[8]   | C6/0     | LVCMOS25_IN | PT11A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| RGBIN[9]   | C7/0     | LVCMOS25_IN | PT11B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| lcdDe      | A11/0    | LVCMOS25_IN | PT27B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| lcdHsync   | A10/0    | LVCMOS25_IN | PT27A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| lcdVsync   | C11/0    | LVCMOS25_IN | PT29B |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| lvdsLine0  | D18/2    | LVDS_OUT    | PR5A  |           | DIFFDRIVE:3.5 CLAMP:ON          |
+| lvdsLine1  | C18/2    | LVDS_OUT    | PR2A  |           | DIFFDRIVE:3.5 CLAMP:ON          |
+| lvdsLine2  | F17/2    | LVDS_OUT    | PR8A  |           | DIFFDRIVE:3.5 CLAMP:ON          |
+| lvdsOutClk | A2/7     | LVDS_OUT    | PL14A |           | DIFFDRIVE:3.5 CLAMP:ON          |
+| pllInClock | B11/0    | LVCMOS25_IN | PT29A |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
++------------+----------+-------------+-------+-----------+---------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -65,11 +65,11 @@ Pinout by Pin Number:
 | A4/7     |     unused, PULL:DOWN |            |               | PL2A  | LDQ8                     |           |
 | A5/7     |     unused, PULL:DOWN |            |               | PL2B  | LDQ8                     |           |
 | A6/0     | RGBIN[10]             | LOCATED    | LVCMOS33_IN   | PT4A  |                          |           |
-| A7/0     | RGBIN[4]              | LOCATED    | LVCMOS33_IN   | PT18A |                          |           |
-| A8/0     | RGBIN[5]              | LOCATED    | LVCMOS33_IN   | PT18B |                          |           |
-| A9/0     | RGBIN[0]              | LOCATED    | LVCMOS33_IN   | PT24A | GR_PCLK0_1               |           |
-| A10/0    | lcdHsync              | LOCATED    | LVCMOS33_IN   | PT27A | PCLKT0_1                 |           |
-| A11/0    | lcdDe                 | LOCATED    | LVCMOS33_IN   | PT27B |                          |           |
+| A7/0     | RGBIN[4]              | LOCATED    | LVCMOS25_IN   | PT18A |                          |           |
+| A8/0     | RGBIN[5]              | LOCATED    | LVCMOS25_IN   | PT18B |                          |           |
+| A9/0     | RGBIN[0]              | LOCATED    | LVCMOS25_IN   | PT24A | GR_PCLK0_1               |           |
+| A10/0    | lcdHsync              | LOCATED    | LVCMOS25_IN   | PT27A | PCLKT0_1                 |           |
+| A11/0    | lcdDe                 | LOCATED    | LVCMOS25_IN   | PT27B |                          |           |
 | A12/1    |     unused, PULL:DOWN |            |               | PT40A |                          |           |
 | A13/1    |     unused, PULL:DOWN |            |               | PT40B |                          |           |
 | A14/1    |     unused, PULL:DOWN |            |               | PT47A |                          |           |
@@ -82,11 +82,11 @@ Pinout by Pin Number:
 | B3/7     |     unused, PULL:DOWN |            |               | PL5D  | LDQ8                     |           |
 | B4/7     | RGBIN[13]             | LOCATED    | LVCMOS25_IN   | PL5B  | LDQ8                     |           |
 | B5/7     |     unused, PULL:DOWN |            |               | PL2C  | LDQ8                     |           |
-| B6/0     | RGBIN[11]             | LOCATED    | LVCMOS33_IN   | PT4B  |                          |           |
-| B8/0     | RGBIN[7]              | LOCATED    | LVCMOS33_IN   | PT15B |                          |           |
-| B9/0     | RGBIN[2]              | LOCATED    | LVCMOS33_IN   | PT22A |                          |           |
-| B10/0    | RGBIN[1]              | LOCATED    | LVCMOS33_IN   | PT24B | GR_PCLK0_0               |           |
-| B11/0    | pllInClock            | LOCATED    | LVCMOS33_IN   | PT29A | PCLKT0_0                 |           |
+| B6/0     | RGBIN[11]             | LOCATED    | LVCMOS25_IN   | PT4B  |                          |           |
+| B8/0     | RGBIN[7]              | LOCATED    | LVCMOS25_IN   | PT15B |                          |           |
+| B9/0     | RGBIN[2]              | LOCATED    | LVCMOS25_IN   | PT22A |                          |           |
+| B10/0    | RGBIN[1]              | LOCATED    | LVCMOS25_IN   | PT24B | GR_PCLK0_0               |           |
+| B11/0    | pllInClock            | LOCATED    | LVCMOS25_IN   | PT29A | PCLKT0_0                 |           |
 | B12/1    |     unused, PULL:DOWN |            |               | PT35A | PCLKT1_0                 |           |
 | B13/1    |     unused, PULL:DOWN |            |               | PT42A |                          |           |
 | B15/1    |     unused, PULL:DOWN |            |               | PT51A |                          |           |
@@ -100,11 +100,11 @@ Pinout by Pin Number:
 | C3/7     |     unused, PULL:DOWN |            |               | PL8C  | LDQ8                     |           |
 | C4/7     | RGBIN[12]             | LOCATED    | LVCMOS25_IN   | PL5A  | LDQ8                     |           |
 | C5/7     |     unused, PULL:DOWN |            |               | PL2D  | LDQ8                     |           |
-| C6/0     | RGBIN[8]              | LOCATED    | LVCMOS33_IN   | PT11A |                          |           |
-| C7/0     | RGBIN[9]              | LOCATED    | LVCMOS33_IN   | PT11B |                          |           |
-| C8/0     | RGBIN[6]              | LOCATED    | LVCMOS33_IN   | PT15A |                          |           |
-| C10/0    | RGBIN[3]              | LOCATED    | LVCMOS33_IN   | PT22B |                          |           |
-| C11/0    | lcdVsync              | LOCATED    | LVCMOS33_IN   | PT29B |                          |           |
+| C6/0     | RGBIN[8]              | LOCATED    | LVCMOS25_IN   | PT11A |                          |           |
+| C7/0     | RGBIN[9]              | LOCATED    | LVCMOS25_IN   | PT11B |                          |           |
+| C8/0     | RGBIN[6]              | LOCATED    | LVCMOS25_IN   | PT15A |                          |           |
+| C10/0    | RGBIN[3]              | LOCATED    | LVCMOS25_IN   | PT22B |                          |           |
+| C11/0    | lcdVsync              | LOCATED    | LVCMOS25_IN   | PT29B |                          |           |
 | C12/1    |     unused, PULL:DOWN |            |               | PT35B |                          |           |
 | C13/1    |     unused, PULL:DOWN |            |               | PT42B |                          |           |
 | C14/1    |     unused, PULL:DOWN |            |               | PT47B |                          |           |
@@ -331,5 +331,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jul 17 20:47:24 2024
+Sun Jul 21 20:38:58 2024
 
