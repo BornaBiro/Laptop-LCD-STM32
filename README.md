@@ -81,3 +81,4 @@ Nope. I think that I gave you enough info to get you started. If I missed someth
 - Use graphics instead of the txt files for connections
 - Better LVDS module for FPGA
 - Custom STM32 PCB with SDRAM and dedicated RGB -> LVDS IC
+- Change the name of the FPGA project to something different than "blink" 🤦
