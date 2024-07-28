@@ -76,3 +76,8 @@ Power supply: You can use USB on STM32 and ULX3S boards for the supply, only LCD
 
 ## I have a XY LCD, can you write the code for me?
 Nope. I think that I gave you enough info to get you started. If I missed something, please let me know, I will try my best to fill in the gaps.
+
+## To-DO
+- Use graphics instead of the txt files for connections
+- Better LVDS module for FPGA
+- Custom STM32 PCB with SDRAM and dedicated RGB -> LVDS IC
