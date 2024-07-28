@@ -1,0 +1,47 @@
+LCD Cable Pinout (LCD side)
+ 1 - GND
+ 2 - VDD (3V3)
+ 3 - VDD (3V3)
+ 4 - Vedid(3V3)
+ 5 - NC (test pin)
+ 6 - CLK (EDID)
+ 7 - DATA (EDID)
+ 8 - RXIN0- (LVDS)
+ 9 - RXIN0+ (LVDS)
+10 - GND
+11 - RXIN1- (LVDS)
+12 - RXIN1- (LVDS)
+13 - GND
+14 - RXIN2- (LVDS)
+15 - RXIN2+ (LVDS)
+16 - GND
+17 - RXCLKIN- (LVDS)
+18 - RXCLKIN+ (LVDS)
+19 - GND
+20 - GND
+21 - 30 - NC (test pins)
+
+LCD Cable Pinout (motherboard connector pinout) - Breakout board
+                              NC - 1 ○        ○ 40 - LCD Conn. pin 2. [VDD]
+                              NC - 2 ○        ○ 39 - LCD Conn. pin 3. [VDD]
+                              NC - 3 ○        ○ 38 - LCD Conn. pin 4. [Vdeid]
+                              NC - 4 ○        ○ 37 - LCD Conn. pin 6. [CLK (EDID)]
+                              NC - 5 ○        ○ 36 - LCD Conn. pin 7. [DATA (EDID)]
+       LCD Conn. pin 8. [RXIN0-] - 6 ○        ○ 35 - LCD Conn. pin 9. [RXIN0+]
+      LCD Conn. pin 11. [RXIN1-] - 7 ○        ○ 34 - LCD Conn. pin 12. [RXIN1+]
+      LCD Conn. pin 14. [RXIN2-] - 8 ○        ○ 33 - LCD Conn. pin 15. [RXIN2+]
+    LCD Conn. pin 17. [RXCLKIN-] - 9 ○        ○ 32 - LCD Conn. pin 18. [RXCLKIN+]
+                            GND - 10 ○        ○ 31 - LCD Conn. pin 10. [GND - SHIELD]
+                             NC - 11 ○        ○ 30 - NC
+                             NC - 12 ○        ○ 29 - NC
+                             NC - 13 ○        ○ 28 - NC
+                             NC - 14 ○        ○ 27 - NC
+                        LCD GND - 15 ○        ○ 26 - LCD GND
+                             NC - 16 ○        ○ 25 - LCD Inverter pin 1. [ABRT/NC]
+       LCD Inverter pin 3. [EN] - 17 ○        ○ 24 - LCD Inverter pin 6. [VCC - 9V]
+ LCD Inverter pin 7. [VCC - 9V] - 18 ○        ○ 23 - LCD Inverter pin 2. [DBRT]
+                             NC - 19 ○        ○ 22 - LCD Inverter pin 4. [GND - Inverter]
+       LCD Inverter pin 6 [GND] - 20 ○        ○ 21 - LCD GND
+
+LCD Inverter pin 2. [DBRT] - Connect to 3V3 [DO NOT Connect to the VCC - 9V!]
+LCD Inverter pin 3. [EN] - Connect to 3V3 [DO NOT Connect to the VCC - 9V!]
